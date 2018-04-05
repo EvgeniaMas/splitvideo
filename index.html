@@ -209,12 +209,54 @@ font-size:40px;
   background-color: transparent;
   color: transparent;  
   z-index: 5;
-  background-color: green;
+ 
    
 }
 
 .closed {
 	z-index: 105;
+}
+
+
+@media screen and (max-width: 768px) {
+.open {
+  
+  right: 10px;
+  width: 50px;
+  height: 50px;
+  
+}
+
+.close_menu{  
+  right: 0px;
+  top:0;
+  width: 70px;
+  height: 70px;
+ 
+ 
+}
+
+}
+
+@media screen and (min-width: 992px) and (max-width: 1099px) {
+.close_menu {  
+  top: 60px;
+ 
+  
+ 
+}
+}
+  
+@media screen and (max-width: 450px) {
+.close_menu {  
+  width: 50px;
+  height: 50px;
+  top:20px;
+  right: 10px;
+  
+  
+ 
+}
 }
 
 
@@ -230,6 +272,7 @@ font-size:40px;
   -webkit-transition: opacity 0.2s linear;
   transition: opacity 0.2s linear;
   z-index: 100;
+  
 }
 .open:hover {
   opacity: 0.8;
