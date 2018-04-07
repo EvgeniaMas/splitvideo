@@ -160,7 +160,7 @@ function createQuestionElement(index) {
     }  
    var user_data = JSON.parse(sessionStorage.getItem('USER_POWER'));
    console.log(user_data);
-    score.append(' <form id="count_power" action="power.php" method="POST"><input id="tele" class="modal_inputs2" name="name" type="text" placeholder="Введите имя"  required="required" /><input class="modal_inputs2" name="tel" type="text" placeholder="Введите телефон" required="required"/><input id="user_power" class="modal_inputs2" name="user_power" type="text"/><br><button class="back_btn personal_model">Подобрать кондиционер</button></form>');
+    score.append(' <form id="count_power" action="power.php" method="POST"><input id="tele" class="modal_inputs2" name="name" type="text" placeholder="Введите имя"  required="required" /><input class="modal_inputs2" name="tel" type="text" placeholder="Введите телефон" required="required"/><input id="user_power" class="modal_inputs2" name="user_power" type="text"/><br><button type="submit" class="back_btn personal_model">Подобрать кондиционер</button></form>');
     
     
     

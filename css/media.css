@@ -139,11 +139,7 @@ a.second_phone {
     margin-top: 180px;
 }
 
-input.modal_inputs2 {
-    display: block;
-    margin:auto;
-    margin-top: 20px;
-}
+
 
 #img_logo
  {
@@ -152,11 +148,16 @@ input.modal_inputs2 {
 }
 
 div.social_icons {
-    width: 100px;
+    max-width: 80px;
+    display: block;
     margin:auto;
     margin-bottom: 20px;
 }
 
+span.icon27 {
+  padding-right: 0;
+  float: right;
+}
 
 p.social {
    text-align: center;
@@ -189,7 +190,8 @@ p.productor {
 }
 
 .product_card img {
-    width: 220px;
+    width: 95%;
+    max-width: 220px;
 }
 
 .header_phoneblock {
@@ -233,12 +235,56 @@ span.icon0:before {
       
     
     max-height: 200px !important;
+   
+    max-width: 320px!important;
+
     
 }
+
+div.modal-content {
+  padding-top: 40px;
+}
+
+
 button.buy_btn.modal_button {
     position: relative;
     display: block;
+    margin: auto;
+    min-width: 180px;
+    left:0;
+}
+
+
+div.modal-content p.productor {
+    display: none;
+
+}
+div.modal-content p.select_square {
+  text-align: center;
+}
+
+div.modal-content div.color-choose {
+    display: block;
+    max-width: 120px;
     margin:auto;
+    min-height: auto;
+}
+div.modal-content select.userselect{
+text-align: center;
+
+margin:auto;
+display: block;
+max-width: 60px;
+}
+
+div.modal-content select.userselect.invisible_content {
+  display:none;
+}
+
+.main_modal .modal-dialog .modal-content .modal_title {
+    
+    font-size: 20px;
+    
 }
 
 }
@@ -247,12 +293,34 @@ button.buy_btn.modal_button {
 
 
 @media screen and (max-width: 768px) {
+
+
 h1.header-description-title {
     font-size: 28px;
     letter-spacing: 1px;
     margin-top: 30px;
    
 }
+
+
+.main_modal .modal-dialog .modal-content {
+    position: relative;
+    width: 90%;
+    margin:auto;
+}
+
+
+input[type=text], input[type=tel] {
+    position: relative;
+    margin:auto;
+    width: 90%;
+    max-width: 300px;
+    margin-bottom: 15px;
+    
+    padding: 8px 8px 8px 25px;
+   
+}
+
 
 #bonus h2.section_titlewhite {
     max-width: 80%;
@@ -284,7 +352,7 @@ h1.header-description-title {
 
 .carousel-indicators {
     position: absolute;
-    bottom: 10px;
+    bottom: -20px;
     
 }
 
@@ -410,6 +478,30 @@ p.main_activity {
     display: none;
 }
 
+p.comfort {
+    display: none;
+}
+
+.header_phoneblock {
+  display: none;
+}
+
+div.header_logoblock {
+position: absolute;
+top: 10px;
+left: 50%;
+width: 140px;
+margin-left: -60px;
+
+}
+
+img.header_logo {
+   width: 80px;
+   margin:auto;
+   display: block;
+
+}
+
 a.header_phone {
     text-align: center;
 }
@@ -431,68 +523,7 @@ img.booklet {
 }
 
 
-@media screen and (max-width: 450px) {
 
-
-.page_icons {
-    font-size: 22px;
-}
-
-h1.header-description-title {
-    font-size: 20px;
-    
-   
-}
-h2.section_titlewhite {
-    font-size: 16px;
-    line-height: 20px;
-    
-}
-
-
-.section_textwhitetitle2 {
-    font-size: 16px;
-    line-height: 20px;
-    
-    text-align: center;
-   
-}
-
-    
-.header-content p {
-    font-size: 16px;
-    
-}
-img.section_image,
-img.booklet {
-    display: block;
-    max-height: 220px;
-    
-}
-.footer__sections {
-    font-size: 15px;
-    
-}
-
-
-#bonus p.section_textwhite, #advantages p.section_textwhite, p.section_textwhitetitle, #guarantee p.section_textwhite {
-    text-align: center;
-    font-size: 17px;
-}
-#img_logo {
-    max-width: 55px;
-}
-
-ul.footer__menu li a, .footer__contactsText {
-    
-    font-size: 14px;
-   
-}
-.open {
-    width: 30px;
-    height: 30px;
-}
-}
 
 .container{
     min-width: 375px!important;
@@ -510,7 +541,7 @@ div.buttons_group {
 
 .product_item {
   
-  min-height: 890px;
+  min-height: 910px;
 }
 
 .product_item.long{
@@ -597,38 +628,14 @@ div.video_aux {
 
 }
 
- @media screen and (max-width: 800px){
-.fullscreen-video-wrap{
-  background-image: url(../img/slide2.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;background-position: center;
-}
-
-#bg_video {
-    display: none;
-}
-/*.header-overlay{
-  opacity:1;
-}*/
-
-#preloader
- {
-  display: none;
-}
-}
+ 
 
 html{
      background:#225470;
 }
 
-@media screen and (min-width: 801px){
-#preloader {
- 
-  display: block;
- 
-  
- }
-}
+
+
 
 @media (max-width: 768px) and (orientation: landscape) {
 
@@ -644,5 +651,286 @@ h1.header-description-title {
    
 }
 #bonus{ margin-top: 120px; }
+
+
+.si-phone {
+  display: none;
 }
 }
+
+
+
+polygon.actor {
+  min-width: 150px!important;
+}
+
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+button.prev_certificate {
+  left: 2px;
+
+
+}
+
+button.next_certificate {
+  
+  right: 2px;
+ 
+
+}
+.certificate_swiper {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 15px;
+    padding-bottom: 45px;
+    overflow: hidden;
+    
+}
+}
+
+
+
+@media screen and (max-width: 768px) {
+div.video_aux {
+  display: none;
+}
+ 
+div.poster {
+  display: block;
+  margin-bottom: 20px;
+}
+
+#guarantee h2.section_titlewhite {
+    
+    margin-bottom: 5px;
+    
+}
+
+#guarantee span.white_textdesc {
+    
+    padding-bottom: 5px;
+}
+
+
+#about_company p.section_textwhitetitle2 span,
+#guarantee p.section_textwhite span
+
+ {
+    float: left;
+    
+    
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: 15px;
+}
+
+
+#about_company p.section_textwhitetitle span {
+float:left;
+}
+
+#about_company p.section_textwhitetitle {
+  float: right;
+  width: 100%;
+  margin:auto;
+  clear:both;
+  font-size:18px;
+}
+
+
+ 
+#about_company p.section_textwhitetitle {
+  
+  display: block;
+}
+
+#guarantee div.icons_centerblock {
+  width: 70%; 
+  display: block;
+  margin:auto;
+ 
+}
+
+#about_company div.icons_centerblock {
+   width: 90%; 
+  margin:auto;
+ 
+}
+
+
+#about_company div.icons_centerblockbig {
+  width: 90%;
+  padding-right: 0;
+  padding-left: 0;
+  margin:auto;
+  
+}
+
+.empty_div {
+  display: none;
+}
+
+
+.partners.wrapper {
+    position: relative;
+    width: 100%;
+}
+
+
+svg.svg {
+  min-width: 150px!important;
+}
+
+.partners_swiper.partner_logo img {
+      max-width: 100px!important;
+ }     
+img.brand-logo {
+  width: 90px;
+}
+
+#steps 
+ {
+    padding-top: 5px;
+}
+
+#advantages .site-section {
+  padding-bottom: 10px;
+}
+}
+
+@media (max-width: 768px) and (orientation: portrait) {
+
+button.buy_btn, button.more_btn {
+    padding: 8px 3px;
+    width: 138px;
+}
+}
+
+@media screen and (max-width: 450px) {
+.product_item {
+    width: 90%;
+}
+
+.main_modal .modal-dialog .modal-content {
+   
+    max-width: 295px;
+    
+}
+
+div.model {
+    text-align: left;
+    font-size: 16px;
+}
+
+
+div.social_icons {
+    max-width: 60px;
+   
+    margin-bottom: 10px;
+}
+
+.page_icons {
+    font-size: 22px;
+}
+
+h1.header-description-title {
+    font-size: 20px;
+    
+   
+}
+h2.section_titlewhite {
+    font-size: 16px;
+    line-height: 20px;
+    
+}
+
+
+.section_textwhitetitle2 {
+    font-size: 16px;
+    line-height: 20px;
+    
+    text-align: center;
+   
+}
+
+    
+.header-content p {
+    font-size: 16px;
+    
+}
+img.section_image,
+img.booklet {
+    display: block;
+    max-height: 220px;
+    
+}
+.footer__sections {
+    font-size: 15px;
+    
+}
+
+
+#bonus p.section_textwhite, #advantages p.section_textwhite, p.section_textwhitetitle, #guarantee p.section_textwhite {
+    text-align: center;
+    font-size: 17px;
+}
+#img_logo {
+    max-width: 55px;
+}
+
+ul.footer__menu li a, .footer__contactsText {
+    
+    font-size: 14px;
+   
+}
+.open {
+    width: 30px;
+    height: 30px;
+}
+
+#about_company p.section_textwhitetitle span {
+    float: none;
+}
+
+
+#about_company p.section_textwhitetitle {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    display: block;
+    font-size: 16px;
+    clear: both;
+    float: none;
+}
+}
+@media screen and (max-width: 768px) {
+.partners .wrapper {
+    
+    padding-left: 64px!important;
+    padding-right: 64px!important;
+   
+}
+.partners_swiper .partner_logo img {
+  max-width: 120px;
+}
+}
+
+
+    @media screen and (max-width: 450px) {
+.partners .wrapper {
+    
+    padding-left: 20px!important;
+    padding-right: 20px!important;
+   
+}
+.partners_swiper .partner_logo img,
+img.brand-logo {
+  max-width: 100px;
+  margin-left: -50px;
+
+}
+}
+

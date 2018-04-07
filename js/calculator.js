@@ -162,7 +162,7 @@
       }
     }  
   
-    score.append(' <form id="count_power" action="power.php" method="POST"><input id="tele" class="modal_inputs2" name="name" type="text" placeholder="Введите имя"  required="required" /><input class="modal_inputs2" name="tel" type="text" placeholder="Введите телефон" required="required"/><input class="modal_inputs2" id="user_power" name="user_power" /><br><button class="back_btn personal_model">Подобрать кондиционер</button></form>');
+    score.append('<div class="final_form"> <form id="count_power" action="power.php" method="POST"><input onClick="send_power()" id="name" name="name" type="text" placeholder="Введите имя"  required="required" /><br><input id="tele" name="tel" type="text" placeholder="Введите телефон" required="required"/><input id="user_power" name="user_power" /><br><button type="submit" class="back_btn personal_model">Подобрать кондиционер</button></form></div>');
     
     return score;
   }
@@ -381,11 +381,19 @@ else{
 var k_fix = 0;
 }  
 
-var total_power = q.toFixed(k_fix) + ' кВт';
-var condition_range = (q * 0.95).toFixed(k_fix) + ' &ndash; ' + (q * 1.15).toFixed(k_fix) + ' кВт';
+var total_power = q.toFixed(k_fix);
+sessionStorage.setItem('FINAL_POWERS',total_power )
+var condition_range = (q * 0.95).toFixed(k_fix) + ' &ndash; ' + (q * 1.15).toFixed(k_fix);
 
-$('#result').html('Расчетная мощность охлаждения Q: ' + total_power);
-$('#range').html('Рекомендуемый диапазон Qrange: ' + condition_range);
+$('#result').html('Расчетная мощность охлаждения Q: ' + total_power + ' кВт');
+$('#range').html('Рекомендуемый диапазон Qrange: ' + condition_range + ' кВт');
 
 }
 
+
+function send_power(){
+var user_power = sessionStorage.getItem('FINAL_POWERS');
+var a = $('#tele').val();
+console.log(a);
+$('#user_power').val(user_power);
+}

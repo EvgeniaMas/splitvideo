@@ -234,7 +234,7 @@ ul {
     .page-form-border.bottom{bottom:-33px;
       background-position:left bottom}
 
-input[type=text], input[type=password], input[type=email], input[type=tel], textarea, select {
+input[type=text], input[type=tel], textarea, select {
     position: relative;
     background: #fff;
     width: 200px;
@@ -286,10 +286,29 @@ button.back_btn.personal_model {
 
 form#count_power {
 display: block;
-min-height: 120px;
+min-height: 260px;
+
 }
 
-#user_power {
-  background-color: blue;
-  coor: red;
+@media screen and (max-width: 991px) {
+input#tele,
+input#name {
+  display: block;
+  
+  margin-left: 5px;
+  margin-bottom: 10px;
+}
+
+
+    
+
+}
+
+div.final_form {
+  position: relative;
+  
+}
+
+input#user_power {
+  visibility: hidden;
 }

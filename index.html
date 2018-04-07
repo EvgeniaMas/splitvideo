@@ -58,7 +58,7 @@
 }
 
 .square.grey {
-  background: #225470;
+  background: #fff;
   height: 200%;
   left: -50%;
   bottom: -130%;
@@ -77,6 +77,26 @@
   background-size: contain;
 }
 
+@media screen and (max-width: 800px){
+#bg_video {
+    display: none;
+}
+
+#preloader
+ {
+  display: none;
+}
+}
+
+@media screen and (min-width: 801px){
+#preloader {
+ 
+  display: block;
+ 
+  
+ }
+}
+
 div.top_headerline {
 min-height: 110px;
 background-color: transparent;
@@ -93,6 +113,9 @@ margin:auto;
 height: 100%;  
 
 }
+
+
+
 
 /*Видео шапка*/ 
 
@@ -121,11 +144,13 @@ p.main_activity b {
 
 
 button.buy_btn.modal_button {
+
   position: absolute;
   top: 50%;
   left: 25%;
 
   min-width: 180px;
+
 }
 
 
@@ -161,11 +186,17 @@ div .model_fixed {
   width:100%;
   height:100vh;
   overflow:hidden;
+  
+  background-image: url(img/slide2.jpg);
+
+  background-repeat: no-repeat;
+  background-size: cover;background-position: center;
 }
 
 .fullscreen-video-wrap video{
   min-height:100%;
   min-width:100%;
+  
 
 }
 
@@ -206,8 +237,8 @@ font-size:40px;
   width: 70px;
   height: 70px;
   display: block;
-  background-color: red;
-  opacity: 0.5;
+  background-color: transparent;
+  /*opacity: 0.5;*/
   color: transparent;  
   z-index: 5;
  
@@ -578,7 +609,17 @@ div.color-choose {
   <div class="square white"></div>  
   <div class="square grey"></div>  
   <div class="home_climate"></div>
+
+   </div>
+  <div class='cube'>
+  <div class='cube-wrapper'>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
   </div>
+</div>
+ 
 </div>
 
 
@@ -588,7 +629,7 @@ div.color-choose {
   <div class="container-fluid top_headerline">
     <div class="container">
       <div class="col-md-12">
-        <div class="col-md-2 col-xs-3">
+        <div class="col-md-2 col-xs-3 header_logoblock">
           <img class="header_logo " src="img/white_logo.png" alt="Логотип">
           <p class="comfort">С нами комфортно</p>
          </div>
@@ -607,9 +648,14 @@ div.color-choose {
   </div>
 </div>
     <div class="fullscreen-video-wrap">
-    <video id="bg_video" src="split.mp4" autoplay="" loop="">
-      
-    </video>
+    
+
+ <video id="bg_video" autoplay="" loop="">
+              <source src="split.mp4" type="video/mp4">
+              <source src="video.webm" type="video/webm">
+              <source src="split.ogg" type="video/ogg">            
+    </video> 
+
     </div>
     <div class="header-overlay"></div>
      <div class="close_menu"></div>
@@ -676,11 +722,11 @@ div.color-choose {
     
    <div class="row">
 
-    <div class="col-md-6 wow slideInLeft" data-wow-duration="2s">
+    <div class="col-md-6 wow slideInLeft" data-wow-duration="1s">
     <img class="section_image" src="img/1.jpg" alt="Кондиционер в интерьере">
     </div>
 
-    <div class="col-md-6 wow slideInRight" data-wow-duration="2s">
+    <div class="col-md-6 wow slideInRight" data-wow-duration="1s">
       
       <p class="section_textwhite "><span class="page_icons icon1"></span>Год обслуживания <br> <span>бесплатно</span> </p>
      
@@ -724,13 +770,12 @@ div.color-choose {
     
    <div class="row">
 
-    <div class="col-md-6 wow slideInLeft">
-       <!-- <span class="white_textdesc"> Мы комплексно решаем задачи по установке и обслуживанию климатического оборудования,     
-      чтобы создавать для Вас <br> КОМФОРТНЫЙ КЛИМАТ</span> -->
+    <div class="col-md-6 wow slideInLeft" data-wow-duration="1s">
+       
     <img class="section_image" src="img/2.jpg" alt="Кондиционер в интерьере">
     </div>
 
-    <div class="col-md-6 wow slideInRight">
+    <div class="col-md-6 wow slideInRight" data-wow-duration="1s">
       <div class="advantages_title">
      
      <p class="section_textwhitetitle">
@@ -843,10 +888,10 @@ div.color-choose {
     <div class="container">
       <div class="col-md-12">
          <div class="col-md-5 col-sm-12">        
-        <img class="section_image wow slideInLeft" src="img/3.jpg" alt="Кондиционер в интерьере">
+        <img class="section_image wow slideInLeft" data-wow-duration="1s" src="img/3.jpg" alt="Кондиционер в интерьере">
     </div>
      
-      <div class="col-md-7 col-sm-12 wow slideInRight">
+      <div class="col-md-7 col-sm-12 wow slideInRight" data-wow-duration="1s">
         <h2 class="section_titlewhite">Помните!</h2>
         <p class="section_textwhite">Срок службы и качество работы сплит­системы зависит от того, правильно ли подобрано оборудование и насколько качественно оно установлено.</p>   
         <h2 class="section_titlewhite">А ТАКЖЕ!</h2>
@@ -968,30 +1013,30 @@ div.color-choose {
 
    <div class="container">     
       <h2 class="section_titlewhite">УСЛУГИ</h2>
-        <div class="row">
-            </div>
-            <div class="col-md-3 col-sm-6 wow slideIneft">
+        <div class="col-md-12 icons_centerblockbig">
+            <!-- </div> -->
+            <div class="col-md-3 col-sm-6 wow slideIneft" data-wow-duration="1s">
               <div class="col-md-12">
-                <div class="col-md-2 col-xs-2">
+                <div class="col-md-2 col-sm-2 col-xs-2">
                    <span class="page_icons icon11"></span>
                   </div>
-                  <div class="col-md-10 col-xs-10">
+                  <div class="col-md-10 col-sm-10 col-xs-10">
                      <p class="section_textwhite">Монтаж кондиционеров </p>
                   </div> 
              
 
-              <div class="col-md-2 col-xs-2">
+              <div class="col-md-2 col-sm-2 col-xs-2">
                    <span class="page_icons icon11"></span>
                  </div>
-                  <div class="col-md-10 col-xs-10">
+                  <div class="col-md-10 col-sm-10 col-xs-10">
                      <p class="section_textwhite">Монтаж систем вентиляции
                       </p>
               </div>
 
-              <div class="col-md-2 col-xs-2">
+              <div class="col-md-2 col-sm-2 col-xs-2">
                    <span class="page_icons icon11"></span>
                  </div>
-                  <div class="col-md-10 col-xs-10">
+                  <div class="col-md-10 col-sm-10 col-xs-10">
                      <p class="section_textwhite">Демонтаж кондиционеров </p>                 
               </div>
             </div>
@@ -999,28 +1044,28 @@ div.color-choose {
              
              <div class="col-md-5 col-sm-6"> 
 
-             <div class="col-md-12">
-                <div class="col-md-2 col-xs-2">
+             <div class="col-md-12 ">
+                <div class="col-md-2 col-sm-2 col-xs-2">
                    <span class="page_icons icon11"></span>
                  </div>
-                  <div class="col-md-10 col-xs-10">
+                  <div class="col-md-10 col-sm-10 col-xs-10">
                      <p class="section_textwhite">Сервисное обслуживание и ремонт кондиционеров </p>
                   
                   </div> 
               
 
-              <div class="col-md-2 col-xs-2">
+              <div class="col-md-2 col-sm-2 col-xs-2">
                    <span class="page_icons icon11"></span>
                  </div>
-                  <div class="col-md-10 col-xs-10">
+                  <div class="col-md-10 col-sm-10 col-xs-10">
                      <p class="section_textwhite">Оптовая и розничная продажа кондиционеров </p>                  
                  
               </div>
 
-              <div class="col-md-2 col-xs-2">
+              <div class="col-md-2 col-sm-2 col-xs-2">
                    <span class="page_icons icon11"></span>
                  </div>
-                  <div class="col-md-10 col-xs-10">
+                  <div class="col-md-10 col-sm-10 col-xs-10">
                      <p class="section_textwhite">Оптовая и розничная продажа комплектующих для кондиционеров </p>
                   
                   </div> 
@@ -1030,7 +1075,7 @@ div.color-choose {
           <a href="test.html" class="callback_btn">Расчитать мощность кондиционера</a>
             </div> 
 
-            <div class="col-md-4 col-sm-12 wow slideInRight"> 
+            <div class="col-md-4 col-sm-12 wow slideInRight" data-wow-duration="1s"> 
         <img class="section_image " src="img/5.jpg" alt="Кондиционер в интерьере">       
       </div>
         
@@ -1102,7 +1147,7 @@ div.color-choose {
 <section id="catalog" class="split_products site-section  ">
     <div class="container">
        <h2 class="section_titlewhite">Наш ассортимент</h2>
-       <p class="section_textwhite">позволяет подобрать оборудование  с учетом всех ваших пожеланий</p>
+       <p class="section_textwhite">позволяет подобрать оборудование  с учетом всех Ваших пожеланий</p>
         <h3 class="section_textwhite">Самые популярные модели сплит-систем</h3>
         <div class="col-md-12">
            <div class="col-md-4 one_product"> 
@@ -1114,17 +1159,24 @@ div.color-choose {
                     <img id="white_cond" class="active"  data-image="белый" src="catalog/low/FJ/white.png" alt="Кондиционер AUX FJ">
                 </div>                   
                 
-              <div class="color-choose">                 
+              <div class="color-choose">  
+              <input data-image="черный" type="radio" class="black" name="color" value="черный">
+                <label data-color="черный"><span></span></label>
+                             
+                <input data-image="серый" type="radio" class="grey" name="color" value="серый">
+                <label data-color="серый"><span></span></label>
+                 <input data-image="белый" type="radio" class="white" name="color" value="белый">
+                <label data-color="белый"><span></span></label>
              </div>
 
              <span class="credit">Рассрочка 0%</span>
 
            <p class="model_title"></p>
 
-            <p class="select_square">Выбрать цвет кондиционера</p>
+            <p class="select_square"></p>
 
-            <select name="model" class="userselect">
-              <option data-id="Модель: <br> ASW-H07A4/FJ-WR1" value="
+            <select name="model" class="userselect invisible_content">
+              <option data-id="Модель: <br> ASW-H07A4/FJ-W/S/B/R1" value="
                 Площадь помещения: 20 м² <br>
                 Бесшумный<br>   
                 Биофильтр<br>   
@@ -1433,15 +1485,19 @@ DC-инвертор  <br>
                     <img id="boy" data-image="голубой"  src="catalog/premium/Kids/blue.png" alt="серия Kids Inverter"> 
                 </div>
                 <div class="color-choose"> 
+                	<input  data-image="розовый" type="radio" class="pink" name="color" value="розовый">
+                <label data-color="розовый"><span></span></label>
+                <input  data-image="голубой" type="radio" class="blue" name="color" value="голубой">
+                <label data-color="голубой"><span></span></label>
                
                </div>
                <span class="credit">Рассрочка 0%</span>
 
               <p class="model_title"></p>
-          <p class="select_square">Выбрать</p>
+          <p class="select_square"></p>
 
-            <select name="model" class="userselect">
-              <option data-id="Модель: <br> AWG-H09BC/R1DI" value=" 
+            <select name="model" class="userselect invisible_content">
+              <option data-id="Модель: <br> AWG/B-H09BC/R1DI" value=" 
 Площадь помещения: 25м²  <br> 
 
 DC-инвертор <br>
@@ -2330,15 +2386,15 @@ DC-инверторный компрессор A-Pam <br>
       <h2 class="section_titlewhite">6 главных преимуществ</h2>
         <div class="row">
             <div class="col-md-4 col-sm-12"> 
-               <img class="section_image wow slideInLeft" src="img/6.jpg" alt="Кондиционер в интерьере">
+               <img class="section_image wow slideInLeft" data-wow-duration="1s" src="img/6.jpg" alt="Кондиционер в интерьере">
             </div>
 
 
 
-            <div class="col-md-8 col-sm-12 wow slideInRight"> 
+            <div class="col-md-8 col-sm-12 wow slideInRight" data-wow-duration="1s"> 
              <div class="col-md-12">
-                <div class="col-md-2 col-xs-2">
-                 <span class="page_icons icon12"></span>
+                <div class="col-md-2 col-xs-2 icons12_set">
+                 <span class="page_icons icon12 icons12_set"></span>
                  </div>
                  <div class="col-md-10 col-sm-12">
                     <p class="section_textwhite">При монтаже используем штроборез с пылесосом, что минимизирует количество пыли и крошки, которую потом сложно убирать</p>
@@ -2391,9 +2447,9 @@ DC-инверторный компрессор A-Pam <br>
   <div class="container">     
       <h2 class="section_titlewhite">5 основных правил <br>надежной установки и долговечной <br>службы сплит-системы для вас</h2>
         <div class="row">
-            <div class="col-md-6 col-sm-6 wow slideInLeft">
+            <div class="col-md-6 col-sm-6 wow slideInLeft" data-wow-duration="1s">
            <p class="section_textwhite">Скачайте их здесь и уберегите себя от проблем</p>
-           <!-- <button type="button" class="callback_btn wow pulse"  data-wow-iteration="3" data-wow-duration="3000ms" data-toggle="modal" data-target="#download_modal"><span>Скачать буклет</span></button>  -->
+           
 
 
 <div class="svg">
@@ -2405,7 +2461,7 @@ DC-инверторный компрессор A-Pam <br>
     </a>
 </div>
             </div>
-          <div class="col-md-6 col-sm-6 wow slideInRight">
+          <div class="col-md-6 col-sm-6 wow slideInRight" data-wow-duration="1s">
             <img class="booklet" src="img/paper.png" alt="Буклет">
           </div>
                
@@ -2428,83 +2484,77 @@ DC-инверторный компрессор A-Pam <br>
       
      
     
-   <div class="row">
+   <div class="row icons_centerblockbig">
 
     
 
-    <div class="col-md-8 wow slideInLeft">
+    <div class="col-md-8 wow slideInLeft" data-wow-duration="1s">
 
       <div class="col-md-12">
-                <div class="col-md-2">
+                <div class="col-md-2 col-sm-2 col-xs-2">
                    <span class="page_icons icon13"></span>
                  </div>
-                  <div class="col-md-10">
+                  <div class="col-md-10 col-sm-10 col-xs-10">
                      <p class="section_textwhite">Диагностика кондиционеров</p>
                   </div> 
 
-                  <div class="col-md-2">
+                  <div class="col-md-2 col-sm-2 col-xs-2">
                    <span class="page_icons icon13"></span>
                  </div>
-                  <div class="col-md-10">
+                  <div class="col-md-10 col-sm-10 col-xs-10">
                      <p class="section_textwhite">Проверка и чистка теплообменника внешнего и внутреннего блоков</p>
                   </div> 
 
-                  <div class="col-md-2">
+                  <div class="col-md-2 col-sm-2 col-xs-2">
                    <span class="page_icons icon13"></span>
                  </div>
-                  <div class="col-md-10">
+                  <div class="col-md-10 col-sm-10 col-xs-10">
                      <p class="section_textwhite">Проверка и чистка фильтров, испарителя, конденсатора</p>
                   </div> 
 
-                  <div class="col-md-2">
+                  <div class="col-md-2 col-sm-2 col-xs-2">
                    <span class="page_icons icon13"></span>
                  </div>
-                  <div class="col-md-10">
+                  <div class="col-md-10 col-sm-10 col-xs-10">
                      <p class="section_textwhite">Проверка и чистка дренажной системы кондиционера</p>
                   </div> 
 
 
-                  <div class="col-md-2">
+                  <div class="col-md-2 col-sm-2 col-xs-2">
                    <span class="page_icons icon13"></span>
                  </div>
-                  <div class="col-md-10">
+                  <div class="col-md-10 col-sm-10 col-xs-10">
                      <p class="section_textwhite">Измерение рабочего давления в системе</p>
                   </div> 
 
-                  <div class="col-md-2">
+                  <div class="col-md-2 col-sm-2 col-xs-2">
                    <span class="page_icons icon13"></span>
                  </div>
-                  <div class="col-md-10">
+                  <div class="col-md-10 col-sm-10 col-xs-10">
                      <p class="section_textwhite">Диагностика утечки фреона</p>
                   </div> 
 
-                  <div class="col-md-2">
+                  <div class="col-md-2 col-sm-2 col-xs-2">
                    <span class="page_icons icon13"></span>
                  </div>
-                  <div class="col-md-10">
+                  <div class="col-md-10 col-sm-10 col-xs-10">
                      <p class="section_textwhite">Дозаправка кондиционера фреоном (хладагент), если это необходимо</p>
                   </div> 
 
-                  <div class="col-md-2">
+                  <div class="col-md-2 col-sm-2 col-xs-2">
                    <span class="page_icons icon13"></span>
                  </div>
-                  <div class="col-md-10">
+                  <div class="col-md-10 col-sm-10 col-xs-10">
                      <p class="section_textwhite">Перевод кондиционера с летнего режима на зимний и наоборот</p>
                   </div> 
 
-                  <div class="col-md-2">
+                  <div class="col-md-2 col-sm-2 col-xs-2">
                    <span class="page_icons icon13"></span>
                  </div>
-                  <div class="col-md-10">
+                  <div class="col-md-10 col-sm-10 col-xs-10">
                      <p class="section_textwhite">Проверка состояния термоизоляции фреонопроводов</p>
                   </div> 
 
-                  <!-- <div class="col-md-2">
-                   <span class="page_icons icon13"></span>
-                 </div>
-                  <div class="col-md-10">
-                     <p class="section_textwhite">Дезинфекция кондиционера</p>
-                  </div>  -->
       </div>
 
       
@@ -2512,13 +2562,11 @@ DC-инверторный компрессор A-Pam <br>
 
        <div class="col-md-4">
       
-    <img class="section_image wow slideInRight" src="img/8.jpg" alt="Кондиционер в интерьере">
+    <img class="section_image wow slideInRight" data-wow-duration="1s" src="img/8.jpg" alt="Кондиционер в интерьере">
     </div>
 
     </div>
-     <!-- <div class="blue_wrapper">
-        <p>Чистку и сервисное обслуживание сплит-систем наши специалисты выполняют уникальным способом. Мы разработали сервисный пакет с отводом грязной воды, который крепится под внутренний блок сплита, после чего он, обработанный спецсредством , промывается насквозь напором воды из мойки высокого давления KARCHER. <br>Какими либо другими способами так тщательно вымыть сплит невозможно.</p>
-      </div> -->
+    
   </div>
 
 </section>
@@ -2552,12 +2600,20 @@ DC-инверторный компрессор A-Pam <br>
     <div class="col-md-6 col-sm-12">
       
         <div class="video_aux">
-            <video class="aux" src="condition.mp4" autoplay="" loop=""></video>
+            
+             <video class="aux" autoplay="" loop=""  poster="img/poster.jpg">
+              <source src="condition.mp4" type="video/mp4">
+              <source src="condition.ogg" type="video/ogg">
+              <source src="condition.webm" type="video/webm">  
+              </video> 
+        </div>
+        <div class="poster">
+         <img class ="poster_image" src="img/poster.jpg" alt="Гарантия на кондиционер">
         </div>
    
     </div>
 
-    <div class="col-md-6 col-sm-12">
+    <div class="col-md-6 col-sm-12 icons_centerblock">
       
       <p class="section_textwhite"><span class="page_icons icon14"></span>Все гарантии прописаны в договоре. <br>5 лет на оборудование, <br>5 лет на работы </p>
      
@@ -2587,8 +2643,8 @@ DC-инверторный компрессор A-Pam <br>
 	<h2 class="section_titlewhite">О компании</h2>					
 
 <div class="col-md-12">
-       <div class="col-md-7 col-sm-12">  
-                     <p class="section_textwhitetitle"> <span class="page_icons icon17"></span>
+       <div class="col-md-7 col-sm-12 icons_centerblockbig">  
+                     <p class="section_textwhitetitle "> <span class="page_icons icon17"></span>
                      Компания Home Climate ЦЕНИТ СВОЮ РЕПУТАЦИЮ!
                       </p>
                   <p class="section_textwhite">
@@ -2603,7 +2659,7 @@ DC-инверторный компрессор A-Pam <br>
               </div>
 
 
-<div class="col-md-5 col-sm-12"> 
+<div class="col-md-5 col-sm-12 icons_centerblockbig"> 
                      <p class="section_textwhitetitle"><span class="page_icons icon18"></span>
                      В НАШЕЙ КОМАНДЕ РАБОТАЮТ ТОЛЬКО ПРОФЕССИОНАЛЫ
                       </p>
@@ -2615,8 +2671,8 @@ DC-инверторный компрессор A-Pam <br>
 </div>			
 
 
-      <div class="col-md-12">
-        <div class="col-md-2"></div>
+      <div class="col-md-12 icons_centerblockbig">
+        <div class="col-md-2 col-xs-1 empty_div"></div>
 			<div class="col-md-8 company_single_block">
 					<p class="section_textwhitetitle"><span class="page_icons icon19"></span>
                      ВЫБИРАЯ НАС, ВЫ ВЫБИРАЕТЕ <br>НАДЕЖНОСТЬ И КАЧЕСТВО
@@ -2626,7 +2682,7 @@ DC-инверторный компрессор A-Pam <br>
 			</div>
     </div>
 
-<div class="col-md-12">
+<div class="col-md-12 icons_centerblock">
 <div class="col-md-3">
   
 	<p class="section_textwhitetitle2"><span class="page_icons icon20"></span> 8 лет  на рынке </p>
@@ -2695,7 +2751,7 @@ DC-инверторный компрессор A-Pam <br>
     <div class="container">
       <div class="row">
           <div class="col-md-12">
-            <div class="col-md-3 col-xs-12">
+            <div class="col-md-3 col-xs-6">
               <img id="img_logo" src="img/white_logo.png" alt="Логотип">          
              <p class="social">Мы в социальных сетях</p>
              <div class="social_icons">
@@ -2730,25 +2786,25 @@ DC-инверторный компрессор A-Pam <br>
                   </li>                       
               </ul>
             </div>
-            <div class="col-md-5 col-xs-6">
+            <div class="col-md-5 col-xs-12">
               <p id="contacts" class="footer__sections">Контакты</p>
-              <div class="col-md-2 col-xs-2">                
-               </div>
-               <div class="col-md-10 col-xs-10">
+              <!-- <div class="col-md-2 col-xs-2">                
+               </div> -->
+               <div class="col-md-12">
                 
                  <p class="footer__contactsText"><span class="page_icons icon24"></span>г. Находка, Угольная 61, база ТМТ</p>
                 </div>
-                <div class="col-md-2 col-xs-2">                
-               </div>
-               <div class="col-md-10 col-xs-10">
+                <!-- <div class="col-md-2 col-xs-2">                
+               </div> -->
+               <div class="col-md-12">
                 
                  <p class="footer__contactsText"><span class="page_icons icon25"></span>+7 (4236) 799-766 <br> +7 (964) 431 66 43
                      </p>                      
                 </div>
-                <div class="col-md-2 col-xs-2">
+                <!-- <div class="col-md-2 col-xs-2">
                 
-               </div>
-               <div class="col-md-10 col-xs-10">
+               </div> -->
+               <div class="col-md-12">
                  <span class="footer__contactsText"><span class="page_icons icon26"></span>info@h-climat.ru</span>
                 </div>
             </div>          
@@ -2936,9 +2992,18 @@ DC-инверторный компрессор A-Pam <br>
                     <img id="white_cond2" class="active"  data-image="белый" src="catalog/low/FJ/white.png" alt="Кондиционер AUX FJ">          
                 </div>
                  <p class="model_title"></p>
-                 <p class="select_square">Выбрать цвет кондиционера</p>
-            <select name="model" class="userselect">
-            <option data-id="Модель: <br> ASW-H07A4/FJ-WR1" value="
+                 <p class="select_square"></p>
+                 <div class="color-choose">  
+              <input data-image="черный" type="radio" class="black" name="color" value="черный">
+                <label data-color="черный"><span></span></label>
+                             
+                <input data-image="серый" type="radio" class="grey" name="color" value="серый">
+                <label data-color="серый"><span></span></label>
+                 <input data-image="белый" type="radio" class="white" name="color" value="белый">
+                <label data-color="белый"><span></span></label>
+             </div>
+            <select name="model" class="userselect invisible_content">
+            <option data-id="Модель: <br> ASW-H07A4/FJ-W/S/B/R1" value="
             <b>AUX</b> <br>       
             <b>14 300 руб.</b>  <br>      
             <b>Тип: </b>on/off сплит-система <br>     
@@ -2952,7 +3017,7 @@ DC-инверторный компрессор A-Pam <br>
             <b>Тип хладагента:</b> R410А<br>      
             <b>Гарантия: 3 года </b><br>  
             <b>Производитель:</b> AUX серия FJ <br>     
-            <b>Модель: </b>ASW-H07A4/FJ-WR1 <br>      
+            <b>Модели: </b>ASW-H07A4/FJ-W/S/B/R1 <br>      
             <b>Наличие:</b> Есть в наличии     
             ">Белый</option>
             <option data-id="Модель: <br> ASW-H07A4/FJ-SR1" value=" 
@@ -3439,11 +3504,7 @@ DC-инверторный компрессор A-Pam <br>
               <li data-target="#myCarousel4" data-slide-to="2"></li>
               <li data-target="#myCarousel4" data-slide-to="3"></li>
               <li data-target="#myCarousel4" data-slide-to="4"></li>
-              <li data-target="#myCarousel4" data-slide-to="5"></li>              
-              <li data-target="#myCarousel4" data-slide-to="6"></li>
-              <li data-target="#myCarousel4" data-slide-to="7"></li>
-              <li data-target="#myCarousel4" data-slide-to="8"></li>
-              <li data-target="#myCarousel4" data-slide-to="9"></li>              
+                      
               
             </ol> 
             <div class="carousel-inner">
@@ -3479,7 +3540,7 @@ DC-инверторный компрессор A-Pam <br>
                <div class="product_card">                   
                     
                     <img data-image="серый" class="active" src="catalog/premium/LA/grey.png" alt="AUX серия LA">
-                    <img data-image="brown" src="catalog/premium/LA/brown.png" alt="AUX серия LA">
+                    <img data-image="коричневый" src="catalog/premium/LA/brown.png" alt="AUX серия LA">
                     
                 </div>
                 <div class="color-choose">
@@ -3621,45 +3682,37 @@ DC-инверторный компрессор A-Pam <br>
 
 
               <p class="model_title"></p>
-            <p class="select_square">Выбрать</p>
+            <p class="select_square"></p>
+            <div class="color-choose"> 
+                	<input  data-image="розовый" type="radio" class="pink" name="color" value="розовый">
+                <label data-color="розовый"><span></span></label>
+                <input  data-image="голубой" type="radio" class="blue" name="color" value="голубой">
+                <label data-color="голубой"><span></span></label>
+               
+               </div>
 
-            <select name="model" class="userselect">
-              <option data-id="Модель: <br>AWG-H09BC/R1DI" value="   
-    <b>AUX</b>  <br>        
+            <select name="model" class="userselect invisible_content">
+              <option data-id="Модель: <br>AWG/B-H09BC/R1DI" value="
+
+   
+    <b>AUX</b>         
     <b>49 700 руб. </b> <br>      
     <b>Тип: </b>DC-инвертор, сплит-система <br>       
     <b>Тип монтажа:</b> настенный <br>        
     <b>Режимы:</b> охлаждение/обогрев/осушение <br>       
-    <b>Рекомендуемая площадь:</b> до 35м² <br>        
+    <b>Рекомендуемая площадь:</b> до 25м² <br>        
     <b>Мощность охлаждения:</b> 2700 Вт <br>        
     <b>Мощность обогрева:</b> 2800 Вт  <br>       
     <b>Потребляемая мощность:</b> 820 Вт<br>        
     <b>Уровень шума (max/min): </b>26/19 дБ <br>        
     <b>Тип хладагента:</b> R410А <br>       
     <b>Гарантия:</b> 3 года  <br> 
-    <b>Производитель:</b> AUX серия LA Exclusive Inverter <br>        
-    <b>Модель:</b> ASW-<b></b>H12A4/LA600R1DI  <br>      
+    <b>Производитель:</b> AUX серия Kids Inverter Exclusive Inverter <br>        
+    <b>Модель:</b> AWG/B-H09BC/R1DI  <br>      
     <b>Наличие:</b> Есть в наличии <br>       
-    ">для девочек
-                    </option>
+    "></option>
 
-     <option data-id="Модель: <br>AWB-H09BC/R1DI" value="   
-    <b>AUX </b><br>         
-    <b>49 700 руб.</b>  <br>      
-    <b>Тип:</b> DC-инвертор, сплит-система <br>       
-    <b>Тип монтажа: </b>настенный <br>        
-    <b> Режимы: </b>охлаждение/обогрев/осушение <br>       
-    <b>Рекомендуемая площадь:</b> до 35м² <br>        
-    <b>Мощность охлаждения:</b> 2700 Вт<br>         
-    <b>Мощность обогрева: </b>2800 Вт <br>        
-    <b>Потребляемая мощность:</b> 820 Вт <br>       
-    <b>Уровень шума (max/min): </b>26/19 дБ <br>        
-    <b>Тип хладагента:</b> R410А <br>       
-    <b>Гарантия:</b> 3 года <br> 
-   <b> Производитель:</b> AUX серия LA Exclusive Inverter   <br>      
-   <b> Модель:</b> ASW-H12A4/LA600R1DI  <br>      
-    <b>Наличие:</b> Есть в наличии  <br>      
-">для мальчиков</option>             
+           
 </select>
 <div class="model"></div>
   </div>
@@ -4981,7 +5034,7 @@ DC-инверторный компрессор A-Pam <br>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.9.8/TweenMax.min.js'></script>
 <script  src="js/preloader.js"></script>
   <script src="libs/fancybox/jquery.fancybox.min.js" defer></script>
-  <script src="js/wow.js" defer></script>
+  <script src="js/wow.js"></script>
      <script>
     wow = new WOW(
       {
