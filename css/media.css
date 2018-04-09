@@ -8,6 +8,11 @@
     
 }
 
+
+.partners_swiper.partner_logo img {
+      max-width: 105px!important;
+ } 
+
 .certificate_swiper {
    padding-bottom: 20px;
    
@@ -125,8 +130,7 @@ a.header_phone {
     font-size: 17px;
 }    
 a.header_phone {
-    font-size: 16px;
-    
+    font-size: 16px;    
     margin-bottom: 5px;
     line-height: 16px;
 }
@@ -139,7 +143,9 @@ a.second_phone {
     margin-top: 180px;
 }
 
-
+.si-phone a.phone-link {
+  font-size: 18px;
+}
 
 #img_logo
  {
@@ -646,15 +652,24 @@ html{
 
 
 h1.header-description-title {
-    margin-top: 160px;
+    margin-top: 190px;
     
    
 }
-#bonus{ margin-top: 120px; }
+#bonus{ margin-top: 140px;
+ }
 
 
-.si-phone {
-  display: none;
+
+}
+
+
+@media (max-width: 667px) and (orientation: landscape) {
+h1.header-description-title {
+    margin-top: 210px;   
+   
+}
+#bonus{ margin-top: 160px;
 }
 }
 
@@ -881,10 +896,8 @@ img.booklet {
     max-width: 55px;
 }
 
-ul.footer__menu li a, .footer__contactsText {
-    
-    font-size: 14px;
-   
+ul.footer__menu li a, .footer__contactsText {    
+    font-size: 14px;   
 }
 .open {
     width: 30px;
@@ -894,8 +907,6 @@ ul.footer__menu li a, .footer__contactsText {
 #about_company p.section_textwhitetitle span {
     float: none;
 }
-
-
 #about_company p.section_textwhitetitle {
     text-align: center;
     width: 80%;
@@ -907,24 +918,19 @@ ul.footer__menu li a, .footer__contactsText {
 }
 }
 @media screen and (max-width: 768px) {
-.partners .wrapper {
-    
+.partners .wrapper {    
     padding-left: 64px!important;
     padding-right: 64px!important;
    
 }
 .partners_swiper .partner_logo img {
-  max-width: 120px;
+  max-width: 110px;
 }
 }
-
-
-    @media screen and (max-width: 450px) {
-.partners .wrapper {
-    
+@media screen and (max-width: 450px) {
+.partners .wrapper {    
     padding-left: 20px!important;
-    padding-right: 20px!important;
-   
+    padding-right: 20px!important;   
 }
 .partners_swiper .partner_logo img,
 img.brand-logo {
@@ -932,5 +938,15 @@ img.brand-logo {
   margin-left: -50px;
 
 }
+#guarantee div.icons_centerblock {
+    width: 86%;
+    display: block;
+    margin: auto;
 }
+.invisible_break {
+  display: none;
+} 
 
+
+}
+ 

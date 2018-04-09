@@ -47,7 +47,7 @@ $(document).ready(function() {
         autoplay: 3500,
         autoplayDisableOnInteraction: false,
         breakpoints: {
-            991: {
+            1024: {
                 slidesPerView: 3,
             },
             767: {

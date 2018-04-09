@@ -7,14 +7,11 @@
 	 <meta name="keywords" content="Home Climate, бесшумные кондиционеры от ведущих производителей, AUX, Heier, продажа и установка в г. Находка и Находкинском районе, кондиционеры лоукост, медиум и премиум класса">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="format-detection" content="telephone=no">
+   <!--  <meta name="format-detection" content="telephone=no"> -->
 	<link rel="shortcut icon" href="favicon.png">
 	<link rel="stylesheet" href="libs/bootstrap/bootstrap.css">
-
 <style>
-
 /*Стили прелоадера */
-
 #pagetransition {
   position: fixed;
   top: 0;
@@ -23,9 +20,7 @@
   height: 100%;
   -webkit-transform: translate3d(0, 0, 0);
   -moz-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-
-  
+  transform: translate3d(0, 0, 0);  
 }
 #preloader {
  position: relative;
@@ -36,8 +31,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #171717;
-  
+  background-color: #171717;  
  }
 .square {
   position: absolute;
@@ -45,10 +39,8 @@
   height: 100%;
   -webkit-transform: translate3d(0, 0, 0);
   -moz-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
- 
+  transform: translate3d(0, 0, 0); 
 }
-
 .square.white {
   background: #fff;
   height: 200%;
@@ -56,7 +48,6 @@
   top: -130%;
   z-index: 5;
 }
-
 .square.grey {
   background: #fff;
   height: 200%;
@@ -76,27 +67,20 @@
   background: url(img/team_logo.png) no-repeat center;
   background-size: contain;
 }
-
-@media screen and (max-width: 800px){
+@media screen and (max-width: 991px){
 #bg_video {
     display: none;
 }
-
 #preloader
  {
   display: none;
 }
 }
-
-@media screen and (min-width: 801px){
-#preloader {
- 
+@media screen and (min-width: 992px){
+#preloader { 
   display: block;
- 
-  
  }
 }
-
 div.top_headerline {
 min-height: 110px;
 background-color: transparent;
@@ -107,61 +91,42 @@ width: 100vw;
 padding-top: 20px;
 padding-bottom: 20px;
 }
-
 .wrapper {
 margin:auto;
-height: 100%;  
-
+height: 100%;
 }
 
-
-
-
 /*Видео шапка*/ 
-
 img.header_logo {
   display: block;
   width: 80px;
   position: relative; 
   background-color: transparent;
   z-index: 3;
-  margin: auto;
-  
+  margin: auto;  
 }
-
 p.main_activity {
 padding-left: 20px;
   border-left: 2px solid crimson;
   font-size: 14px;
-
   color: #fff;
 }
-
 p.main_activity b {
   font-family: "Open Sans Bold";
   color: #fff;
 }
-
-
 button.buy_btn.modal_button {
-
   position: absolute;
   top: 50%;
   left: 25%;
-
   min-width: 180px;
-
 }
-
-
 p.comfort {
   font-size: 13px;
   text-align: center;
-  margin-top: 10px;
- 
+  margin-top: 10px; 
   color: #fff;
 }
-
 div.model,
 div .model_fixed {
   text-align: left;
@@ -169,37 +134,28 @@ div .model_fixed {
   line-height: 22px;
   margin-top: 20px;
 }
-
-
-
 .v-header{
   height:100vh;
   display:flex;
   align-items:center;
   color:#fff;
 }
-
 .fullscreen-video-wrap{
   position: fixed;
   top:0;
   left:0;
   width:100%;
   height:100vh;
-  overflow:hidden;
-  
+  overflow:hidden;  
   background-image: url(img/slide2.jpg);
-
   background-repeat: no-repeat;
   background-size: cover;background-position: center;
 }
 
 .fullscreen-video-wrap video{
   min-height:100%;
-  min-width:100%;
-  
-
+  min-width:100%; 
 }
-
 .header-overlay{
   height:100%;
   position: absolute;
@@ -210,12 +166,10 @@ div .model_fixed {
   background:#225470;
   opacity:0.8;
 }
-
 .header-content{
   z-index:2;
   margin-top: 15%;
 }
-
 h1.header-description-title{
 font-size:40px;
   margin-bottom:20px;
@@ -229,7 +183,6 @@ font-size:40px;
   padding-bottom:2rem;
 }
 /*Меню сайта */
-
 .close_menu {
  position: fixed;
   top: 15px;
@@ -237,61 +190,41 @@ font-size:40px;
   width: 70px;
   height: 70px;
   display: block;
-  background-color: transparent;
-  /*opacity: 0.5;*/
+  background-color: transparent;  
   color: transparent;  
   z-index: 5;
- 
-   
 }
 
 .closed {
-	z-index: 105;
-}
-
-
-@media screen and (max-width: 768px) {
-.open {
+	z-index: 115;
   
+}
+@media screen and (max-width: 768px) {
+.open {  
   right: 10px;
   width: 50px;
-  height: 50px;
-  
+  height: 50px;  
 }
-
 .close_menu{  
   right: 0px;
   top:0;
   width: 70px;
   height: 70px;
- 
- 
 }
-
 }
-
 @media screen and (min-width: 992px) and (max-width: 1099px) {
 .close_menu {  
   top: 60px;
- 
-  
- 
 }
-}
-  
+}  
 @media screen and (max-width: 450px) {
 .close_menu {  
   width: 50px;
   height: 50px;
   top:20px;
   right: 10px;
-  
-  
- 
+  }
 }
-}
-
-
 /*Меню сайта */
 .open {
   position: fixed;
@@ -303,8 +236,7 @@ font-size:40px;
   cursor: pointer;
   -webkit-transition: opacity 0.2s linear;
   transition: opacity 0.2s linear;
-  z-index: 100;
-  
+  z-index: 100;  
 }
 .open:hover {
   opacity: 0.8;
@@ -314,8 +246,7 @@ font-size:40px;
   float: left;
   clear: both;
   height: 4px;
-  width: 40px;
- 
+  width: 40px; 
   background-color: #ddd;
   position: absolute;
   right: 3px;
@@ -344,7 +275,7 @@ font-size:40px;
   height: 0;
   width: 0;
   right: 0;
-  top: 0;
+  top: 140px;
   position: absolute;
   background-color: rgba(38, 84, 133, 0.54);
  
@@ -401,10 +332,7 @@ text-transform: uppercase;
   width: 100%;
   color:#fff;
   text-align: right;
-
 }
-
-
 .oppenned .sub-menu {
   opacity: 1;
   height: 550px;
@@ -438,7 +366,6 @@ text-transform: uppercase;
 .oppenned li {
   margin-right: 168px;
 }
-
 .button {
   display: block;
   float: left;
@@ -493,46 +420,27 @@ text-transform: uppercase;
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
-
-
-
-
-
-
-
-
-
 .si-phone {  
     margin-top: 15px;
-    float: right;
+    text-align: left;
     margin-left: 10px;
-
-
 }
-
 .header_phoneblock{
    text-align: right;
 }
-
-
 .header_phone {
       font-size: 20px;
     display: inline;
     margin-bottom: 13px;
    color: #fff;
     font-family: "Open Sans SemiBold";
-
 }
-
 span.icon0:before {
   content: "\f095";
           font-family: "FontAwesome";
-          font-size: 19px;
-        
+          font-size: 19px;        
           color: #fff;
 }
-
-
 b.price {
   display: block;
   font-size: 20px;
@@ -542,11 +450,20 @@ b.price {
   margin-bottom: 10px;
   color:#65b9ed;
 }
-
 div.color-choose {
   display: block;
   min-height: 40px;
   margin-top: 10px;
+}
+
+div.si-phone {
+  position: absolute;
+  top: 180px;
+  
+  z-index: 104;
+  display: block;
+ 
+
 }
 
 
@@ -554,23 +471,24 @@ div.color-choose {
 
 .si-phone a.phone-link {
     color: #fff;
-    display: inline!important;
+    display: block!important;
     font-size: 22px;
     font-family:"Open Sans Bold";
     -webkit-transition: all 0.2s ease-out 0s;
     -moz-transition: all 0.2s ease-out 0s;
     -o-transition: all 0.2s ease-out 0s;
     transition: all 0.2s ease-out 0s;
-
-    
+    float: none;
+    text-align: left;
+    position: relative;
+    z-index: 110;
 }
-
 .si-phone .phone-link:hover {
     color: #ddd;
     background: none;
     text-align: left;
+   
 }
-
 .si-phone .modal-link {
     color: #fff;
     font-size: 16px;
@@ -582,13 +500,14 @@ div.color-choose {
     text-transform: none;
     text-align: left;
     padding: 10px;
+    display: block;
+    max-width: 300px;
 }
-
 .si-phone .modal-link:hover {
     color: #ddd;
-
     text-align: left;
 }
+
 
   </style>
 	<link rel="stylesheet" href="libs/swiper/swiper.min.css">
@@ -601,15 +520,12 @@ div.color-choose {
 	<link rel="stylesheet" href="css/media.css">   
 </head>
 <body>
-
-
 	<div id="global-wrapper">
-<div id="preloader">
+  <div id="preloader">
   <div id="pagetransition"> 
   <div class="square white"></div>  
   <div class="square grey"></div>  
   <div class="home_climate"></div>
-
    </div>
   <div class='cube'>
   <div class='cube-wrapper'>
@@ -618,13 +534,8 @@ div.color-choose {
     <span></span>
     <span></span>
   </div>
+</div> 
 </div>
- 
-</div>
-
-
-
-
 <header id="main" class="v-header ">
   <div class="container-fluid top_headerline">
     <div class="container">
@@ -638,39 +549,33 @@ div.color-choose {
       </div>
       <div class="col-md-6 col-xs-8">
            <p class="header_phoneblock"><span class="page_icons icon0"></span>
-            <a href="tel:84236799766" class="header_phone">+7 (4236) 799-766  </a>
-              <a href="tel:89140690228" class="header_phone second_phone">+7 914 069-02-28  </a><br>
+            <a href="tel:+74236799766" class="header_phone">+7 (4236) 799-766  </a>
+              <a href="tel:+79140690228" class="header_phone second_phone">+7 914 069-02-28  </a><br>
           </p> 
       </div>
-
-    
       </div>    
   </div>
 </div>
     <div class="fullscreen-video-wrap">
-    
-
  <video id="bg_video" autoplay="" loop="">
               <source src="split.mp4" type="video/mp4">
               <source src="video.webm" type="video/webm">
               <source src="split.ogg" type="video/ogg">            
-    </video> 
-
+    </video>
     </div>
     <div class="header-overlay"></div>
      <div class="close_menu"></div>
      <div  class="open">
-
+           
       <span class="cls"></span>
       <span>
-        <ul class="sub-menu sitesmenu">
-          <li> 
-            <div class="si-phone">
-              <a href="tel:84236799766" class="phone-link">+7 (4236) 799-766  </a>
-              <a href="tel:89140690228" class="phone-link">+7 914 069-02-28  </a><br>
+         <div class="si-phone">
+              <a href="tel:+74236799766" class="phone-link">+7 (4236) 799-766  </a>
+              <a href="tel:+79140690228" class="phone-link">+7 914 069-02-28  </a>
               <a href="#" class="open-phone-modal-1 modal-link" data-toggle="modal" data-target="#main_modal">Подробная консультация. Звоните!</a>
             </div>   
-          </li>
+        <ul class="sub-menu sitesmenu">
+           
           <li>
             <a href="#main">Главная</a>
           </li>
@@ -784,7 +689,7 @@ div.color-choose {
      </p>
    </div>
         
-      <p class="section_textwhite ">
+      <p class="section_textwhite">
        
         Профессионалы осуществят   <br>
         монтаж любой сложности, <br>
@@ -1264,7 +1169,7 @@ div.color-choose {
                   <b>Наличие:</b> Есть в наличии <br>
                   <b class='price'>35 000 руб.</b> <br>
                   Был заказан 53 раз  
-                  ">50²
+                  ">50м²
                 </option>
 
                 <option data-id="Модель: <br>ASW-H24A4/LK-700R1 " value=" 
@@ -1273,7 +1178,7 @@ div.color-choose {
                   Автоматические вертикальные жалюзи <br>   
                   <b>Наличие</b>: Есть в наличии <br>  
                   <b class='price'>42 500 руб.</b> <br>  
-                  Был заказан 39 раз">70²
+                  Был заказан 39 раз">70м²
                 </option>
           </select>
            <div class="model"></div> 
@@ -1313,7 +1218,7 @@ DC-инвертор <br>
 Автоматические вертикальные жалюзи<br>      
 <b>Наличие</b>: Есть в наличии <br>    
 <b class='price'>28 000 руб.</b><br>     
-Был заказан 131 раз">25 м²
+Был заказан 131 раз">25м²
                 </option>
 
               <option data-id="Модель:<br>ASW-H12A4/LK-700R1DI" value="    
@@ -1325,7 +1230,7 @@ DC-инвертор  <br>
 <b> Наличие</b>: Есть в наличии <br>   
 <b class='price'>31 600 руб.</b> <br>   
 Был заказан 99 раз    
-">35 м²
+">35м²
                 </option> 
 
                <option value="  
@@ -1337,7 +1242,7 @@ DC-инвертор<br>
 <b>Наличие</b>: Есть в наличии <br>   
 <b class='price'>50 700 руб.</b> <br>   
 Был заказан 52 раза    
-">50 м²
+">50м²
                 </option> 
 
                <option data-id="Модель: <br>ASW-H24A4/LK-700R1DI" value="   
@@ -1350,7 +1255,7 @@ DC-инвертор  <br>
 <b class='price'>60 000 руб.</b>  <br>  
 Был заказан 71 раз    
  
-">70 м²
+">70м²
                 </option> 
  
 
@@ -1452,7 +1357,7 @@ DC-инвертор  <br>
 <b>Наличие</b>: Есть в наличии <br>  
 <b class='price'>51 900 руб.</b> <br>  
 Был заказан 64 раз    
-">25 м²</option>
+">25м²</option>
 <option data-id="Модель: <br>ASW-H12A4/LA800R1DI" value="DC-инвертор<br>   
 Управление через WI-FI <br>   
 Обдув 4D <br>   
@@ -1462,7 +1367,7 @@ DC-инвертор  <br>
 <b>Наличие</b>: Есть в наличии<br>   
 <b class='price'>57 900 руб.</b> <br>  
 Был заказан 64 раз    
-">35 м²
+">35м²
 </option> 
 </select>
            
@@ -1564,7 +1469,7 @@ DC-инвертор <br>
 Самоочистка теплообменников  <br>   
 <b>Наличие</b>: Есть в наличии <br>  
 <b class='price'>17280 руб.</b> 
-Был заказан 39 раз">20 м²</option>
+Был заказан 39 раз">20м²</option>
 <option data-id="Модель: <br> HSU-09HT103/R2" value="Бесшумный<br>    
 Антибактериальный фильтр <br>    
 Фотокаталитический фильтр <br>   
@@ -1574,7 +1479,7 @@ DC-инвертор <br>
 Самоочистка теплообменников  <br>  
 <b>Наличие</b>: Есть в наличии<br>   
 <b class='price'>18 270 руб.</b> <br> 
-Был заказан 39 раз">25 м²</option> 
+Был заказан 39 раз">25м²</option> 
         
 <option data-id="Модель: <br> HSU-12HT203/R2" value="  
 Бесшумный  <br> 
@@ -1587,7 +1492,7 @@ DC-инвертор <br>
 <b>Наличие</b>: Есть в наличии<br>   
 <b class='price'>21 600 руб.</b> <br> 
 Был заказан 39 раз 
-">35 м²</option> 
+">35м²</option> 
                 
 <option data-id="Модель: <br> HSU-18HT203/R2" value=" 
 Бесшумный   <br>
@@ -1599,7 +1504,7 @@ DC-инвертор <br>
 Самоочистка теплообменников <br>  
 <b>Наличие</b>: Есть в наличии<br>   
 <b class='price'>32 220 руб.</b> <br> 
-Был заказан 39 раз">45 м²</option> 
+Был заказан 39 раз">45м²</option> 
 
 <option data-id="Модель: <br> HSU-24HT203/R2    
 " value="  
@@ -1612,7 +1517,7 @@ DC-инвертор <br>
 Самоочистка теплообменников  <br>  
 <b>Наличие</b>: Есть в наличии<br>   
 <b class='price'>43 020 руб.</b> <br> 
-Был заказан 39 раз">70 м²</option> 
+Был заказан 39 раз">70м²</option> 
 </select>
            
            <div class="model"></div>  
@@ -1649,7 +1554,7 @@ DC-инвертор <br>
 <b class='price'>48 960 руб.</b> <br>      
 Был заказан 39 раз        
     
-">90 м²</option>
+">90м²</option>
 <option data-id="Модель: <br> HSU-36HNH03R2" value="
 
 Бесшумный <br>      
@@ -1661,7 +1566,7 @@ DC-инвертор <br>
 <b class='price'>60 080 руб.</b>  <br>     
 Был заказан 39 раз        
       
-">100 м²</option> 
+">100м²</option> 
         
 
 </select>
@@ -1705,7 +1610,7 @@ DC-инвертор <br>
 <b>Наличие: </b>Есть в наличии  <br> 
 <b class='price'>10 990 руб. </b><br>    
 Был заказан 39 раз      
-">20 м²</option>
+">20м²</option>
 <option data-id="Модель: <br> HSU-09HLT03/R2" value="Бесшумный<br>    
 Бесшумный  <br>   
 Авторестарт   <br>
@@ -1717,7 +1622,7 @@ DC-инвертор <br>
 <b>Наличие: </b>Есть в наличии<br>   
 <b class='price'>11 990 руб.</b>    <br> 
 Был заказан 39 раз      
-">25 м²</option> 
+">25м²</option> 
         
 <option data-id="Модель: <br> HSU-12HLT03/R2" value="  
 Бесшумный  <br>   
@@ -1731,7 +1636,7 @@ DC-инвертор <br>
 <b class='price'>13 990 руб.</b>    <br> 
 Был заказан 39 раз      
  
-">35 м²</option> 
+">35м²</option> 
                 
 <option data-id="Модель: <br> HSU-18HLT03R2" value=" 
 Бесшумный   <br>  
@@ -1744,7 +1649,7 @@ DC-инвертор <br>
 <b>Наличие: </b>Есть в наличии <br>  
 <b class='price'>23 500 руб.</b> <br>    
 Был заказан 39 раз      
-">45 м²</option> 
+">45м²</option> 
 
 <option data-id="Модель: <br> HSU-24HLT03R2    
 " value="  
@@ -1758,7 +1663,7 @@ DC-инвертор <br>
 <b>Наличие: </b>Есть в наличии  <br> 
 <b class='price'>31 450 руб.<b>  <br>   
 Был заказан 39 раз      
-">70 м²</option> 
+">70м²</option> 
 </select>
            
            <div class="model"></div>  
@@ -1881,7 +1786,7 @@ Nano-Aqua модуль    <br>
 <b class='price'>40 320 руб.</b> <br>    
 Был заказан 39 раз      
       
-">70²</option>
+">70м²</option>
 
 
 
@@ -1928,7 +1833,7 @@ Nano-Aqua модуль    <br>
 <b class='price'>20 850 руб. </b>  <br>  
 Был заказан 39 раз      
    
-">20 м²</option>
+">20м²</option>
 <option data-id="Модель: <br>AS09NM5HRA" value="Бесшумный  <br>   
 Режим комфортного сна <br>  
 Антибактериальный фильтр<br>
@@ -1941,7 +1846,7 @@ Nano-Aqua модуль    <br>
 <b class='price'>22 350 руб.</b> <br>    
 Был заказан 39 раз      
    
-">25 м²
+">25м²
 </option> 
 
 
@@ -1957,7 +1862,7 @@ Nano-Aqua модуль    <br>
 <b class='price'>25 110 руб. </b>  <br>  
 Был заказан 39 раз      
 
-">35 м²
+">35м²
 </option> 
 
 
@@ -1973,7 +1878,7 @@ Nano-Aqua модуль    <br>
 <b class='price'>36 520 руб.</b>  <br>   
 Был заказан 39 раз      
 
-">45 м²
+">45м²
 </option> 
 
 
@@ -1989,7 +1894,7 @@ Nano-Aqua модуль    <br>
 <b class='price'>45 330 руб. </b>  <br>  
 Был заказан 39 раз      
 
-">70 м²
+">70м²
 </option> 
 </select>
            
@@ -2032,7 +1937,7 @@ Nano-Aqua модуль    <br>
 <b>Наличие: </b>Есть в наличии <br>  
 <b class='price'>19 350 руб.</b> <br>    
 Был заказан 39 раз 
-">20 м²
+">20м²
 </option>
 
  <option data-id="Модель: <br>AS09TH3HRA" value=" 
@@ -2048,7 +1953,7 @@ Nano-Aqua модуль    <br>
 <b class='price'>20 330 руб.  </b> <br>  
 Был заказан 39 раз      
 
-">25  м²</option>  
+">25м²</option>  
 
 
 
@@ -2065,7 +1970,7 @@ Nano-Aqua модуль    <br>
 <b class='price'>23 160 руб. </b> <br>   
 Был заказан 39 раз      
 
-">35  м²</option>  
+">35м²</option>  
 
 
 <option data-id="Модель: <br>AS18TD2HRA" value=" 
@@ -2080,7 +1985,7 @@ Nano-Aqua модуль    <br>
 <b>Наличие:</b> Есть в наличии   <br>
 <b class='price'>33 240 руб.  </b>   
 Был заказан 39 раз
-">45  м²</option>  
+">45м²</option>  
 
 <option data-id="Модель:<br> AS24TD2HRA" value=" 
 Бесшумный  <br>   
@@ -2095,7 +2000,7 @@ Nano-Aqua модуль    <br>
 <b class='price'>42 680 руб.</b>  <br>   
 Был заказан 39 раз      
 
-">70  м²</option>             
+">70м²</option>             
 </select>
            
 <div class="model"></div>  
@@ -2209,7 +2114,7 @@ Super DC-инвертор<br>
 <b class='price'>55 580 руб. </b>  <br>
 Был заказан 39 раз      
  
-">25 м²
+">25м²
 </option>
 
  <option data-id="Модель: <br>AS35S2SD1FA" value=" 
@@ -2226,7 +2131,7 @@ Super DC-инвертор<br>
 <b class='price'>59 440 руб. </b><br>  
 Был заказан 39 раз      
 
-">35  м²</option>
+">35м²</option>
 </select>
            
 <div class="model"></div>  
@@ -2278,7 +2183,7 @@ DC-инверторный компрессор A-Pam <br>
 <b class='price'>29 610 руб.</b><br>
 Был заказан 39 раз   
 
-">25 м²</option>
+">25м²</option>
 <option data-id="Модель: <br>AS12NS4ERA" value="Бесшумный<br>
 Wi-Fi управление<br>
 Мощная УФ лампа<br>
@@ -2294,26 +2199,8 @@ DC-инверторный компрессор A-Pam <br>
 <b class='price'>33 580 руб. </b>  <br>
 Был заказан 39 раз  
 
-">35 м²
+">35м²
 </option> 
-
-
-<!-- <option name="Модель: <br>AS12NM5HRA" value="Бесшумный      
-Режим комфортного сна   
-Антибактериальный фильтр
-Фотокаталитический фильтр   
-Антикоррозийное покрытие Blue Fin     
-Скрытый дисплей   
-3D Airflow - объемный поток воздуха
-Функция самоочистки теплообменника  
-Наличие: Есть в наличии   
-25 110 руб.     
-Был заказан 39 раз      
-
-">35 м²
-</option> --> 
-
-
 <option data-id="Модель: <br>AS18NM5HRA" value="     
 Бесшумный<br>
 Wi-Fi управление<br>
@@ -2330,7 +2217,7 @@ DC-инверторный компрессор A-Pam <br>
 <b class='price'>50 000 руб. </b>  <br>
 Был заказан 39 раз  
 
-">45 м²
+">45м²
 </option> 
 
 
@@ -2349,7 +2236,7 @@ DC-инверторный компрессор A-Pam <br>
 <b class='price'>61 800 руб. </b>  <br>
 Был заказан 39 раз  
 
-">70 м²
+">70м²
 </option> 
 </select>
            
@@ -2364,21 +2251,8 @@ DC-инверторный компрессор A-Pam <br>
 
 
   </div> <!-- 12 колонок -->
-
-
-
-
 </div>
-
-
-
-
-
 </section>
-
-
-
-  
 
   <!-- END MAINTENANCE -->
 <section id="split_advantages" class="site-section">
@@ -2388,9 +2262,6 @@ DC-инверторный компрессор A-Pam <br>
             <div class="col-md-4 col-sm-12"> 
                <img class="section_image wow slideInLeft" data-wow-duration="1s" src="img/6.jpg" alt="Кондиционер в интерьере">
             </div>
-
-
-
             <div class="col-md-8 col-sm-12 wow slideInRight" data-wow-duration="1s"> 
              <div class="col-md-12">
                 <div class="col-md-2 col-xs-2 icons12_set">
@@ -2418,8 +2289,7 @@ DC-инверторный компрессор A-Pam <br>
                  </div>
                   <div class="col-md-10">
                      <p class="section_textwhite">Наши сплит­системы заправляются озонобесопасным фреоном R 410 A</p>
-                  </div> 
-              
+                  </div>             
 
               <div class="col-md-2 col-xs-2">
                <span class="page_icons icon12"></span>
@@ -2438,10 +2308,7 @@ DC-инверторный компрессор A-Pam <br>
         </div>
     </div>
   </div>
-</section>
-
-
-  
+</section>  
   <!-- END SPLIT ADVANTAGES -->
 <section class="download_section split_download site-section  ">
   <div class="container">     
@@ -2473,23 +2340,13 @@ DC-инверторный компрессор A-Pam <br>
 
 
 
-<section  class="container-fluid maintenance site-section ">
-
-  
+<section  class="container-fluid maintenance site-section "> 
    
  <div  class="container">    
       <h2 class="section_titlewhite">Сервисное обслуживание</h2>
-      <p class="section_textwhite"> всех систем кондиционирования <br>и вентиляции помещений</p>
-    
-      
-     
-    
+      <p class="section_textwhite"> всех систем кондиционирования <br>и вентиляции помещений</p>     
    <div class="row icons_centerblockbig">
-
-    
-
     <div class="col-md-8 wow slideInLeft" data-wow-duration="1s">
-
       <div class="col-md-12">
                 <div class="col-md-2 col-sm-2 col-xs-2">
                    <span class="page_icons icon13"></span>
@@ -2518,8 +2375,6 @@ DC-инверторный компрессор A-Pam <br>
                   <div class="col-md-10 col-sm-10 col-xs-10">
                      <p class="section_textwhite">Проверка и чистка дренажной системы кондиционера</p>
                   </div> 
-
-
                   <div class="col-md-2 col-sm-2 col-xs-2">
                    <span class="page_icons icon13"></span>
                  </div>
@@ -2553,11 +2408,8 @@ DC-инверторный компрессор A-Pam <br>
                  </div>
                   <div class="col-md-10 col-sm-10 col-xs-10">
                      <p class="section_textwhite">Проверка состояния термоизоляции фреонопроводов</p>
-                  </div> 
-
+                  </div>
       </div>
-
-      
        </div>
 
        <div class="col-md-4">
@@ -2579,28 +2431,17 @@ DC-инверторный компрессор A-Pam <br>
       <p class="section_textwhite">и мы заменим фильтры тонкой очистки абсолютно бесплатно!</p>
 
   <button type="button" class="callback_btn"  data-toggle="modal" data-target="#services_modal">Вызвать сервисную службу</button>
-
-
       <p class="section_textwhite">*Обращаем ваше внимание на то, что больше ни одна компания в регионе замену фильтров не производит</p>
     </div>
 </section>
-
-
-
-
 <section id="guarantee" class="container-fluid site-section"> 
   <div  class="container">    
       <h2 class="section_titlewhite">
       Гарантия  <br><span class="white_textdesc"> Гарантии, которые исполним на 100%</span></h2> <br>
-      
-      
-    
+               
    <div class="row">
-
-    <div class="col-md-6 col-sm-12">
-      
-        <div class="video_aux">
-            
+    <div class="col-md-6 col-sm-12">      
+        <div class="video_aux">            
              <video class="aux" autoplay="" loop=""  poster="img/poster.jpg">
               <source src="condition.mp4" type="video/mp4">
               <source src="condition.ogg" type="video/ogg">
@@ -2615,32 +2456,17 @@ DC-инверторный компрессор A-Pam <br>
 
     <div class="col-md-6 col-sm-12 icons_centerblock">
       
-      <p class="section_textwhite"><span class="page_icons icon14"></span>Все гарантии прописаны в договоре. <br>5 лет на оборудование, <br>5 лет на работы </p>
-     
-       <p class="section_textwhite"> <span class="page_icons icon15"></span>  Бесплатная диагностика <br>при неисправности</p>
-       
-         <p class="section_textwhite"><span class="page_icons icon16"></span>Обмен или бесплатный ремонт,<br> если поломка по нашей вине   </p>
+      <p class="section_textwhite"><span class="page_icons icon14"></span>Все гарантии <br> прописаны в договоре. <br>5 лет на оборудование, <br>5 лет на работы </p>     
+       <p class="section_textwhite"> <span class="page_icons icon15"></span>  Бесплатная диагностика <br>при неисправности</p>       
+         <p class="section_textwhite"><span class="page_icons icon16"></span>Обмен или бесплатный ремонт,<br class="invisible_break"> если поломка по нашей вине   </p>
     </div>
-       
-
-     
-      
        </div>
     </div>
 </section>
 
-
-
-
-
-
-
-
 <section class="site-section" id="about_company">
-
-
 <div class="container">
-	<h2 class="section_titlewhite">О компании</h2>					
+	<h2 class="section_titlewhite">О компании</h2>			
 
 <div class="col-md-12">
        <div class="col-md-7 col-sm-12 icons_centerblockbig">  
@@ -2657,8 +2483,6 @@ DC-инверторный компрессор A-Pam <br>
                   а главная цель - это довольный клиент
                   </p>
               </div>
-
-
 <div class="col-md-5 col-sm-12 icons_centerblockbig"> 
                      <p class="section_textwhitetitle"><span class="page_icons icon18"></span>
                      В НАШЕЙ КОМАНДЕ РАБОТАЮТ ТОЛЬКО ПРОФЕССИОНАЛЫ
@@ -2697,9 +2521,6 @@ DC-инверторный компрессор A-Pam <br>
 	 <p class="section_textwhitetitle2"><span class="page_icons icon22"></span>Выполним качественно и в срок проект любой сложности</p>
 </div>
 <div class="col-md-3">
-
-
-
 	<p class="section_textwhitetitle2"><span class="page_icons icon23"></span>Решим "под ключ" все задачи</p>
 </div>
 </div>	
@@ -2709,7 +2530,7 @@ DC-инверторный компрессор A-Pam <br>
 <div class="page-form-block wow pulse"  data-wow-iteration="1" data-wow-duration="3000ms">
 		<div class="container">
 			<div class="form-title">
-				<h2 class="section_titlewhite">ОСТАЛИСЬ ВОПРОСЫ? или вы не нашли нужной информации?<br>				
+				<h2 class="section_titlewhite">ОСТАЛИСЬ ВОПРОСЫ? или вы не нашли нужной информации?<br>			
 				НАШ СПЕЦИАЛИСТ С РАДОСТЬЮ ОТВЕТИТ ВАМ!</h2>
 			</div>
 
@@ -2717,35 +2538,14 @@ DC-инверторный компрессор A-Pam <br>
 					    <input class="modal_inputs2" name="name" type="text" placeholder="Введите имя"  required="required" /> 		   
 					    <input class="modal_inputs2" name="tel" type="text" placeholder="Введите телефон" required="required"/>
 					     <input class="modal_inputs" name="goal" type="hidden" value="консультация"/><br>
-					    <button class="callback_btn">Отправить</button>
-					    
-		        </form>
-		   <!-- <form action="send.php" method="POST" class="send-form page-form" autocomplete="off">
-			<div class="form-title">
-				<b class="section_titlewhite">ОСТАЛИСЬ ВОПРОСЫ? или вы не нашли нужной информации?</b><br>				
-				НАШ СПЕЦИАЛИСТ С РАДОСТЬЮ ОТВЕТИТ ВАМ!
-			</div>
-			   <input type="hidden" name="goal" value="на консультацию">
-           <label class="name_label">
-							<input type="text" name="name" class="name_input" required placeholder="Введите имя">
-							<span></span>
-						</label>
-						<label class="tel_label">
-							<input type="text" name="tel" class="tel_input" required placeholder="Введите телефон">
-							<span></span>
-						</label>
-						<button type="submit" class="callback_btn consult">Задать вопрос</button>
-      </form> -->
+					    <button class="callback_btn">Отправить</button>					    
+		        </form>		  
 	</div>
 </div>
 
-
- 
-
-
 	<!-- END LAST QUESTION -->
 <footer class="container-fluid footer">
-  <div id="map">
+  <div id="map">    
   <script src="libs/map.js" defer></script>
   </div>
     <div class="container">
@@ -2758,13 +2558,6 @@ DC-инверторный компрессор A-Pam <br>
               <a href="https://www.instagram.com/h_climat/" target="_blank" class="instagram"><span class="page_icons icon27"></span></a>
                <a href="https://api.whatsapp.com/send?phone=79140756154&text=Здравствуйте!%20У%20меня%20есть%20вопрос%20насчет%20кондиционеров%20HomeClimate,%20напишите%20мне%20на%20этот%20номер,%20пожалуйста." target="_blank"><span class="page_icons icon28"></span></a>
             </div>
-
-              
-
-
-
-
-
             </div>
             <div class="col-md-4 col-xs-6">
               <p class="footer__sections">Навигация</p>
@@ -2788,22 +2581,18 @@ DC-инверторный компрессор A-Pam <br>
             </div>
             <div class="col-md-5 col-xs-12">
               <p id="contacts" class="footer__sections">Контакты</p>
-              <!-- <div class="col-md-2 col-xs-2">                
-               </div> -->
+              
                <div class="col-md-12">
                 
                  <p class="footer__contactsText"><span class="page_icons icon24"></span>г. Находка, Угольная 61, база ТМТ</p>
                 </div>
-                <!-- <div class="col-md-2 col-xs-2">                
-               </div> -->
+                
                <div class="col-md-12">
                 
-                 <p class="footer__contactsText"><span class="page_icons icon25"></span>+7 (4236) 799-766 <br> +7 (964) 431 66 43
+                 <p class="footer__contactsText"><span class="page_icons icon25"></span>+7 (4236) 799-766  <br> <span class="page_icons icon25 icon25_invisible"></span> +7 (964) 431 66 43
                      </p>                      
                 </div>
-                <!-- <div class="col-md-2 col-xs-2">
-                
-               </div> -->
+               
                <div class="col-md-12">
                  <span class="footer__contactsText"><span class="page_icons icon26"></span>info@h-climat.ru</span>
                 </div>
@@ -2816,6 +2605,7 @@ DC-инверторный компрессор A-Pam <br>
 </div><!-- END PAGE WRAPPER -->
 
 	
+
 	<!-- MAIN MODAL -->
 
 	<div class="modal fade main_modal" id="main_modal">
@@ -2861,8 +2651,6 @@ DC-инверторный компрессор A-Pam <br>
 
 	<!-- END MAIN MODAL -->
 
-<!-- ORDER MODAL -->
-
 	<div class="modal fade main_modal" id="order_modal">
 		<div class="modal-dialog modal-md">
 			<div class="modal-content">
@@ -2887,17 +2675,11 @@ DC-инверторный компрессор A-Pam <br>
 
 
 <div class="modal fade main_modal" id="order_master">
-
     <div class="modal-dialog modal-md">
-
       <div class="modal-content">
-
         <button class="close" type="button" data-dismiss="modal"></button>
-
         <div class="modal-body">
-
           <h5 class="modal_title">Вызвать мастера</h5>
-
           <p>Введите свои данные, чтобы оформить заявку:</p>
 
 					<form action="send.php" method="POST">		  		  	
@@ -2907,16 +2689,10 @@ DC-инверторный компрессор A-Pam <br>
 					    <button class="callback_btn">Отправить</button>
 					    <p class="little_text">Нажимая на кнопку, я даю согласие на обработку персональных данных и соглашаюсь с условиями политики конфиденциальности</p>
 		        </form>
-
         </div>
-
       </div>
-
     </div>
-
   </div>
-
-
 
 	<!-- SERIVCES MODAL -->
 
@@ -2934,17 +2710,13 @@ DC-инверторный компрессор A-Pam <br>
 					     <input class="modal_inputs" name="goal" type="hidden" value="вызов сервисной службы"/>
 					    <button class="callback_btn">Отправить</button>
 					    <p class="little_text">Нажимая на кнопку, я даю согласие на обработку персональных данных и соглашаюсь с условиями политики конфиденциальности</p>
-		        </form>
-					
+		        </form>					
 				</div>
 			</div>
 		</div>
 	</div>
 
 	<!-- END SERVICES MODAL -->
-
-
-
 <div class="modal modal_obj fade modal_objFJ" tabindex="-1" role="dialog" >
   <div class="modal-dialog modal-lg">
     <div class="modal-content big">
@@ -2979,8 +2751,7 @@ DC-инверторный компрессор A-Pam <br>
             <a class="carousel-control right" href="#myCarousel" data-slide="next">
               <span class="glyphicon glyphicon-chevron-right"></span>
             </a>
-            </div> <!-- myCarousel -->
-             
+            </div> <!-- myCarousel -->             
         </div> <!-- 6-md -->
         <div class="col-md-6">
         <div class="one_product"> 
@@ -3043,7 +2814,7 @@ DC-инверторный компрессор A-Pam <br>
             <b>Тип: </b>on/off сплит-система <br>     
             <b>Тип монтажа: </b>настенный  <br>     
             <b>Режимы: </b>охлаждение/обогрев/осушение  <br>    
-            <b>Рекомендуемая площадь:</b> до20 м² <br>      
+            <b>Рекомендуемая площадь:</b> до 20 м² <br>      
             <b>Мощность охлаждения:</b>2100 Вт <br>      
             <b>Мощность обогрева:</b> 2200Вт <br>     
             <b>Потребляемая мощность:</b> 650 Вт <br>     
@@ -3111,8 +2882,6 @@ DC-инверторный компрессор A-Pam <br>
              
                <p class="model_title"></p>
             <p class="select_square">Выбрать площадь помещения</p>
-
-
             <select  name="model" class="userselect">                 
                  <option selected="selected"  data-id="Модель: <br>ASW-H07A4/LK-700R1" value="
                     <b>AUX</b> <br>       
@@ -3120,7 +2889,7 @@ DC-инверторный компрессор A-Pam <br>
 <b>Тип: </b>on/off сплит-система <br>     
 <b>Тип монтажа: </b>настенный   <br>    
 <b>Режимы: </b>охлаждение/обогрев/осушение <br>     
-<b>Рекомендуемая площадь: </b>до 21м² <br>      
+<b>Рекомендуемая площадь: </b>до 21 м² <br>      
 <b>Мощность охлаждения:</b> 2100 Вт <br>      
 <b>Мощность обогрева:</b> 2200Вт  <br>    
 <b>Потребляемая мощность: </b>650 Вт <br>     
@@ -3138,7 +2907,7 @@ DC-инверторный компрессор A-Pam <br>
 <b>Тип: </b>on/off сплит-система <br>     
 <b>Тип монтажа: </b>настенный <br>      
 <b>Режимы: </b>охлаждение/обогрев/осушение <br>     
-<b>Рекомендуемая площадь:</b> до 25м² <br>      
+<b>Рекомендуемая площадь:</b> до 25 м² <br>      
 <b>Мощность охлаждения: </b>2650 Вт <br>      
 <b>Мощность обогрева: </b>2700Вт  <br>    
 <b>Потребляемая мощность: </b>740 Вт <br>     
@@ -3156,7 +2925,7 @@ DC-инверторный компрессор A-Pam <br>
 <b>Тип:</b>on/off сплит-система <br>     
 <b>Тип монтажа: </b>настенный   <br>    
 <b>Режимы: </b>охлаждение/обогрев/осушение  <br>    
-<b>Рекомендуемая площадь:</b> до 35м²  <br>     
+<b>Рекомендуемая площадь:</b> до 35 м²  <br>     
 <b>Мощность охлаждения: </b>3550 Вт  <br>     
 <b>Мощность обогрева:</b> 3650Вт <br>     
 <b>Потребляемая мощность:</b> 1100 Вт<br>       
@@ -3174,7 +2943,7 @@ DC-инверторный компрессор A-Pam <br>
     <b>Тип: </b>on/off сплит-система  <br>    
     <b>Тип монтажа: </b>настенный   <br>    
     <b>Режимы:</b> охлаждение/обогрев/осушение<br>      
-    <b>Рекомендуемая площадь:</b> до 50м²<br>       
+    <b>Рекомендуемая площадь:</b> до 50 м²<br>       
     <b>Мощность охлаждения:</b> 5300 Вт<br>       
     <b>Мощность обогрева:</b> 5450Вт  <br>    
     <b>Потребляемая мощность:</b> 1650 Вт <br>      
@@ -3185,7 +2954,7 @@ DC-инверторный компрессор A-Pam <br>
     <b>Модель: </b>ASW-H18A4/LK-700R1 <br>      
     <b>Наличие:</b> Есть в наличии     
 
-                    ">50²
+                    ">50м²
                   </option>
 
                   <option data-id="Модель: <br>ASW-H24A4/LK-700R1 " value=" 
@@ -3194,7 +2963,7 @@ DC-инверторный компрессор A-Pam <br>
     <b>Тип:</b> on/off сплит-система<br>        
     <b>Тип монтажа:</b> настенный  <br>       
     <b>Режимы:</b> охлаждение/обогрев/осушение  <br>      
-    <b>Рекомендуемая площадь: </b>до 70м² <br>        
+    <b>Рекомендуемая площадь: </b>до 70 м² <br>        
     <b>Мощность охлаждения:</b> 7000 Вт <br>        
     <b>Мощность обогрева:</b> 7100Вт  <br>      
     <b>Потребляемая мощность: </b>2330 Вт<br>         
@@ -3204,7 +2973,7 @@ DC-инверторный компрессор A-Pam <br>
     <b>Производитель: </b>AUX серия LK  <br>      
     <b>Модель: </b>ASW-H24A4/LK-700R1 <br>        
     <b>Наличие:</b> Есть в наличии  <br>      
-    ">70²
+    ">70м²
                 </option>
           </select>
          
@@ -3212,8 +2981,7 @@ DC-инверторный компрессор A-Pam <br>
                </div>
        </div>
       </div>       
-                    <button type="button" class="buy_btn modal_button" data-dismiss="modal" aria-label="Close" data-toggle="modal" data-target="#order_modal"><span aria-hidden="true"></span>Купить</button>     
-    
+                    <button type="button" class="buy_btn modal_button" data-dismiss="modal" aria-label="Close" data-toggle="modal" data-target="#order_modal"><span aria-hidden="true"></span>Купить</button>
     </div>
   </div>
  </div>
@@ -3255,12 +3023,9 @@ DC-инверторный компрессор A-Pam <br>
         <div class="one_product"> 
              <div class="product_item product1">       
                 <p class="productor">Производитель: AUX серия LK Standard Inverter</p>          
-               <div class="product_card">                   
-             
+               <div class="product_card">
                     <img data-image="белый" class="active" src="catalog/low/LK/main.png" alt="Кондиционер AUX LK">   
-                </div>
-
-                 
+                </div>                 
                 <div class="color-choose"></div>
               
              <p class="model_title"></p>
@@ -3274,7 +3039,7 @@ DC-инверторный компрессор A-Pam <br>
 <b>Тип:</b> DC-инвертор, сплит-система <br>         
 <b>Тип монтажа:</b> настенный<br>           
 <b>Режимы:</b> охлаждение/обогрев/осушение <br>         
-<b>Рекомендуемая площадь:</b> до 25м² <br>          
+<b>Рекомендуемая площадь:</b> до 25 м² <br>          
 <b>Мощность охлаждения:</b> 2700 Вт <br>          
 <b>Мощность обогрева:</b> 2800 Вт <br>          
 <b>Потребляемая мощность:</b> 880 Вт <br>         
@@ -3284,7 +3049,7 @@ DC-инверторный компрессор A-Pam <br>
 <b>Производитель:</b> AUX серия LK Standard Inverter <br>         
 <b>Модель:</b> ASW-H09A4/LK-700R1DI<br>           
 <b>Наличие:</b> Есть в наличии         
-">25 м²
+">25м²
                 </option>
 
               <option data-id="Модель:<br>ASW-H12A4/LK-700R1DI" value="    
@@ -3293,7 +3058,7 @@ DC-инверторный компрессор A-Pam <br>
 <b>Тип: </b>DC-инвертор, сплит-система <br>       
 <b>Тип монтажа:</b> настенный  <br>       
 <b>Режимы: </b>охлаждение/обогрев/осушение  <br>      
-<b>Рекомендуемая площадь:</b> до 35м²  <br>       
+<b>Рекомендуемая площадь:</b> до 35 м²  <br>       
 <b>Мощность охлаждения:</b> 3300 Вт <br>        
 <b>Мощность обогрева: </b>3500 Вт<br>         
 <b>Потребляемая мощность:</b> 1020 Вт <br>        
@@ -3302,19 +3067,17 @@ DC-инверторный компрессор A-Pam <br>
 <b>Гарантия:</b> 3 года<br> 
 <b>Производитель:</b> AUX серия LK Standard Inverter   <br>     
 <b>Модель:</b> ASW-H12A4/LK-700R1DI  <br>       
-<b>Наличие:</b> Есть в наличии       
-   
-">35 м²
-                </option> 
-
-               <option value="  
-   
+<b>Наличие:</b> Есть в наличии  
+  
+">35м²
+</option>
+<option value="
     <b>AUX </b><br>         
     <b>50 700 руб.</b> <br>         
     <b>Тип:</b> DC-инвертор, сплит-система<br>        
     <b>Тип монтажа:</b> настенный  <br>       
     <b>Режимы:</b> охлаждение/обогрев/осушение <br>       
-    <b>Рекомендуемая площадь:</b> до 50м² <br>        
+    <b>Рекомендуемая площадь:</b> до 50 м² <br>        
     <b>Мощность охлаждения:</b> 5000 Вт <br>        
     <b>Мощность обогрева:</b> 5100 Вт  <br>       
     <b>Потребляемая мощность:</b> 1500 Вт <br>        
@@ -3323,9 +3086,8 @@ DC-инверторный компрессор A-Pam <br>
     <b>Гарантия:</b> 3 года  <br> 
     <b>Производитель:</b> AUX серия LK Standard Inverter  <br>      
     <b>Модель:</b> ASW-H18A4/LK-700R1DI <br>        
-    <b>Наличие:</b> Есть в наличии       
-        
-    ">50 м²
+    <b>Наличие:</b> Есть в наличии
+    ">50м²
                     </option> 
 
                    <option data-id="Модель: <br>ASW-H24A4/LK-700R1DI" value="   
@@ -3334,7 +3096,7 @@ DC-инверторный компрессор A-Pam <br>
     <b>Тип:</b> DC-инвертор, сплит-система  <br>      
     <b>Тип монтажа: </b>настенный    <br>     
     <b>Режимы: </b>охлаждение/обогрев/осушение  <br>      
-    <b>Рекомендуемая площадь:</b> до 70м² <br>        
+    <b>Рекомендуемая площадь:</b> до 70 м² <br>        
     <b>Мощность охлаждения:</b> 6700 Вт <br>        
     <b>Мощность обогрева:</b> 6800 Вт  <br>       
     <b>Потребляемая мощность:</b> 1880 Вт <br>        
@@ -3343,9 +3105,9 @@ DC-инверторный компрессор A-Pam <br>
     <b>Гарантия:</b> 3 года   <br>      
     <b>Производитель:</b> AUX серия LK Standard Inverter <br>       
     <b>Модель:</b> ASW-H24A4/LK-700R1DI   <br>      
-    <b>Наличие:</b> Есть в наличии <br>       
+    <b>Наличие:</b> Есть в наличии <br>      
 
-">70 м²
+">70м²
 </option> 
 </select>
            
@@ -3440,7 +3202,7 @@ DC-инверторный компрессор A-Pam <br>
     <b>Тип:</b> DC-инвертор, сплит-система <br>       
     <b>Тип монтажа:</b> настенный <br>        
     <b>Режимы:</b> охлаждение/обогрев/осушение<br>        
-    <b>Рекомендуемая площадь:</b> до 25м² <br>        
+    <b>Рекомендуемая площадь:</b> до 25 м² <br>        
     <b>Мощность охлаждения:</b> 2700 Вт <br>        
     <b>Мощность обогрева: </b>2<b></b>800 Вт <br>        
     <b>Потребляемая мощность:</b> 800 Вт <br>       
@@ -3459,7 +3221,7 @@ DC-инверторный компрессор A-Pam <br>
     <b>Тип:</b> DC-инвертор, сплит-система <br>       
     <b>Тип монтажа:</b> настенный  <br>       
     <b>Режимы: </b>охлаждение/обогрев/осушение  <br>      
-    <b>Рекомендуемая площадь:</b> до 35м²  <br>       
+    <b>Рекомендуемая площадь:</b> до 35 м²  <br>       
     <b>Мощность охлаждения:</b> 3300 Вт <br>        
    <b> Мощность обогрева:</b> 3500 Вт  <br>       
     <b>Потребляемая мощность:</b> 970 Вт  <br>      
@@ -3503,9 +3265,7 @@ DC-инверторный компрессор A-Pam <br>
               <li data-target="#myCarousel4" data-slide-to="1"></li>              
               <li data-target="#myCarousel4" data-slide-to="2"></li>
               <li data-target="#myCarousel4" data-slide-to="3"></li>
-              <li data-target="#myCarousel4" data-slide-to="4"></li>
-                      
-              
+              <li data-target="#myCarousel4" data-slide-to="4"></li> 
             </ol> 
             <div class="carousel-inner">
               <div class="active item">
@@ -3537,11 +3297,10 @@ DC-инверторный компрессор A-Pam <br>
         <div class="one_product"> 
              <div class="product_item product1">       
                 <p class="productor">Производитель: AUX серия LA Exclusive Inverter</p>          
-               <div class="product_card">                   
+               <div class="product_card">                 
                     
                     <img data-image="серый" class="active" src="catalog/premium/LA/grey.png" alt="AUX серия LA">
-                    <img data-image="коричневый" src="catalog/premium/LA/brown.png" alt="AUX серия LA">
-                    
+                    <img data-image="коричневый" src="catalog/premium/LA/brown.png" alt="AUX серия LA">                    
                 </div>
                 <div class="color-choose">
                 <input  data-image="коричневый" type="radio" class="brown" name="color" value="коричневый">
@@ -3561,7 +3320,7 @@ DC-инверторный компрессор A-Pam <br>
     <b>Тип:</b> DC-инвертор, сплит-система <br>       
     <b>Тип монтажа:</b> настенный  <br>       
    <b> Режимы:</b> охлаждение/обогрев/осушение <br>       
-    <b>Рекомендуемая площадь: д</b>о 25м²  <br>       
+    <b>Рекомендуемая площадь: </b>до 25 м²  <br>       
     <b>Мощность охлаждения:</b> 2700 Вт <br>        
     <b>Мощность обогрева:</b> 2800 Вт <br>        
     <b>Потребляемая мощность:</b> 820 Вт  <br>      
@@ -3572,7 +3331,7 @@ DC-инверторный компрессор A-Pam <br>
     <b>Модель: </b>ASW-H09A4\LA800R1DI  <br>      
    <b> Наличие:</b> Есть в наличии       
         
-    ">25 м²</option>
+    ">25м²</option>
     <option data-id="Модель: <br>ASW-H12A4/LA800R1DI" value="<b>AUX</b> <br>         
     <b>57 900 руб.</b>     <br>   
     <b>Тип:</b> DC-инвертор, сплит-система <br>       
@@ -3587,9 +3346,8 @@ DC-инверторный компрессор A-Pam <br>
     <b>Гарантия:</b> 3 года<br> 
     <b>Производитель:</b> AUX серия LA Exclusive Inverter  <br>       
     <b>Модель:</b> ASW-H12A4/LA800R1DI  <br>      
-    <b>Наличие:</b> Есть в наличии  <br>      
-      
-    ">35 м²
+    <b>Наличие:</b> Есть в наличии  <br>
+    ">35м²
 </option> 
 </select>
            
@@ -3666,8 +3424,7 @@ DC-инверторный компрессор A-Pam <br>
             <a class="carousel-control right" href="#myCarousel5" data-slide="next">
               <span class="glyphicon glyphicon-chevron-right"></span>
             </a>
-            </div> <!-- myCarousel -->
-            
+            </div> <!-- myCarousel -->            
         </div> <!-- 6-md -->
         <div class="col-md-6">
         <div class="one_product"> 
@@ -3679,8 +3436,6 @@ DC-инверторный компрессор A-Pam <br>
                     <img id="boy2" data-image="голубой"  src="catalog/premium/Kids/blue.png" alt="серия Kids Inverter"> 
                 </div>
                 <div class="color-choose"></div>
-
-
               <p class="model_title"></p>
             <p class="select_square"></p>
             <div class="color-choose"> 
@@ -3690,7 +3445,6 @@ DC-инверторный компрессор A-Pam <br>
                 <label data-color="голубой"><span></span></label>
                
                </div>
-
             <select name="model" class="userselect invisible_content">
               <option data-id="Модель: <br>AWG/B-H09BC/R1DI" value="
 
@@ -3700,7 +3454,7 @@ DC-инверторный компрессор A-Pam <br>
     <b>Тип: </b>DC-инвертор, сплит-система <br>       
     <b>Тип монтажа:</b> настенный <br>        
     <b>Режимы:</b> охлаждение/обогрев/осушение <br>       
-    <b>Рекомендуемая площадь:</b> до 25м² <br>        
+    <b>Рекомендуемая площадь:</b> до 25 м² <br>        
     <b>Мощность охлаждения:</b> 2700 Вт <br>        
     <b>Мощность обогрева:</b> 2800 Вт  <br>       
     <b>Потребляемая мощность:</b> 820 Вт<br>        
@@ -3737,8 +3491,7 @@ DC-инверторный компрессор A-Pam <br>
             <ol class="carousel-indicators">             
               <li data-target="#myCarousel6" data-slide-to="0" class="active"></li>              
               <li data-target="#myCarousel6" data-slide-to="1"></li>              
-              <li data-target="#myCarousel6" data-slide-to="2"></li>
-              
+              <li data-target="#myCarousel6" data-slide-to="2"></li>              
             </ol> 
             <div class="carousel-inner">
               <div class="active item">
@@ -3764,18 +3517,14 @@ DC-инверторный компрессор A-Pam <br>
         <div class="col-md-6">
         <div class="one_product"> 
              <div class="product_item product1">       
-                <p class="productor">Производитель: Haier серия TIBIO      
-</p>          
+                <p class="productor">Производитель: Haier серия TIBIO</p>          
                 <div class="product_card">
                     <img data-image="белый" class="active" src="catalog/low/Tibio/haier-tibio.png" alt="Haier серия TIBIO">
                 </div>
-                <div class="color-choose">
-                    
+                <div class="color-choose">                    
                 </div>
-
               <p class="model_title"></p>
             <p class="select_square">Выбрать площадь помещения</p>
-
 <select name="model" class="userselect">
 <option selected="selected" data-id="Модель: <br> HSU-07HT103/R2" value="   
        <b>Haier </b> <br>      
@@ -3783,7 +3532,7 @@ DC-инверторный компрессор A-Pam <br>
       <b>Тип: </b>on/off сплит-система   <br>     
       <b>Тип монтажа:</b> настенный  <br>       
       <b>Режимы: </b>охлаждение/обогрев/осушение    <br>    
-      <b>Рекомендуемая площадь:</b> до 20м²   <br>      
+      <b>Рекомендуемая площадь:</b> до 20 м²   <br>      
       <b>Мощность охлаждения:</b> 2100 Вт <br>        
       <b>Мощность обогрева:</b> 2100Вт  <br>      
       <b>Потребляемая мощность:</b> 655 Вт <br>       
@@ -3793,14 +3542,14 @@ DC-инверторный компрессор A-Pam <br>
       <b>Производитель:</b> Haier серия TIBIO  <br>       
       <b>Модель:</b> HSU-07HT103/R2    <br>     
       <b>Наличие: </b>Есть в наличии       
-      ">20 м²</option>
+      ">20м²</option>
 
       <option data-id="Модель: <br> HSU-09HT103/R2" value="<b>Haier </b><br>        
       <b>18 270 руб.</b> <br>       
       <b>Тип:</b> on/off сплит-система <br>       
       <b>Тип монтажа:</b> настенный  <br>       
       <b>Режимы:</b> охлаждение/обогрев/осушение <br>       
-      <b>Рекомендуемая площадь:</b> до 25м²  <br>       
+      <b>Рекомендуемая площадь:</b> до 25 м²  <br>       
       <b>Мощность охлаждения:</b> 2700 Вт <br>        
       <b>Мощность обогрева:</b> 2700Вт  <br>      
       <b>Потребляемая мощность:</b> 830 Вт  <br>      
@@ -3810,7 +3559,7 @@ DC-инверторный компрессор A-Pam <br>
       <b>Производитель:</b> Haier серия TIBIO <br>        
       <b>Модель:</b> HSU-09HT103/R2 <br>        
       <b>Наличие:</b> Есть в наличии       
-      ">25 м²</option> 
+      ">25м²</option> 
               
       <option data-id="Модель: <br> HSU-12HT203/R2" value="  
       <b>Haier</b> <br>         
@@ -3818,7 +3567,7 @@ DC-инверторный компрессор A-Pam <br>
       <b>Тип:</b> on/off сплит-система <br>       
       <b>Тип монтажа:</b> настенный <br>        
      <b> Режимы:</b> охлаждение/обогрев/осушение  <br>      
-      <b>Рекомендуемая площадь:</b> до 35м²   <br>      
+      <b>Рекомендуемая площадь:</b> до 35 м²   <br>      
       <b>Мощность охлаждения: </b>3300 Вт <br>        
       <b>Мощностьбогрева:</b> 3300Вт<br>        
       <b>Потребляемая мощность:</b> 1025 Вт <br>        
@@ -3829,7 +3578,7 @@ DC-инверторный компрессор A-Pam <br>
       <b>Модель:</b> HSU-12HT203/R2  <br>       
       <b>Наличие:</b> Есть в наличии       
 
-      ">35 м²</option> 
+      ">35м²</option> 
                       
       <option data-id="Модель: <br> HSU-18HT203/R2" value=" 
      <b> Haier</b><br>          
@@ -3837,7 +3586,7 @@ DC-инверторный компрессор A-Pam <br>
       <b>Тип: </b>on/off сплит-система  <br>      
       <b>Тип монтажа: </b>настенный <br>        
       <b>Режимы:</b> охлаждение/обогрев/осушение <br>       
-      <b>Рекомендуемая площадь:</b> до 45м²   <br>      
+      <b>Рекомендуемая площадь:</b> до 45 м²   <br>      
       <b> Мощность охлаждения:</b> 5100 Вт <br>        
       <b>Мощность обогрева:</b> 5100Вт <br>       
       <b> Потребляемая мощность:</b> 1590 Вт <br>        
@@ -3847,7 +3596,7 @@ DC-инверторный компрессор A-Pam <br>
       <b>Производитель: </b>Haier серия TIBIO <br>        
       <b>Модель:</b> HSU-18HT203/R2   <br>      
       <b>Наличие:</b> Есть в наличии       
-      ">45 м²</option> 
+      ">45м²</option> 
 
       <option data-id="Модель: <br> HSU-24HT203/R2    
       " value="  
@@ -3856,7 +3605,7 @@ DC-инверторный компрессор A-Pam <br>
       <b>Тип:</b> on/off сплит-система   <br>     
       <b>Тип монтажа:</b> настенный   <br>      
       <b>Режимы: </b>охлаждение/обогрев/осушение    <br>    
-      <b>Рекомендуемая площадь: </b>до 70м² <br>        
+      <b>Рекомендуемая площадь: </b>до 70 м² <br>        
       <b>Мощность охлаждения:</b> 6800 Вт<br>         
       <b>Мощность обогрева:</b> 7200Вт <br>       
       <b>Потребляемая мощность:</b> 2195 Вт <br>        
@@ -3866,16 +3615,13 @@ DC-инверторный компрессор A-Pam <br>
       <b> Производитель:</b> Haier серия TIBIO <br>        
       <b>Модель:</b> HSU-24HT203/R2  <br>       
       <b>Наличие:</b> Есть в наличии       
-      ">70 м²</option> 
-            
-</select>
-           
+      ">70м²</option>
+</select>           
            <div class="model"></div>
             </div>
        </div>
       </div>        
-            <button type="button" class="buy_btn modal_button" data-dismiss="modal" aria-label="Close" data-toggle="modal" data-target="#order_modal"><span aria-hidden="true"></span>Купить</button>         
-       
+            <button type="button" class="buy_btn modal_button" data-dismiss="modal" aria-label="Close" data-toggle="modal" data-target="#order_modal"><span aria-hidden="true"></span>Купить</button>
     </div>
   </div>
  </div>
@@ -3916,8 +3662,7 @@ DC-инверторный компрессор A-Pam <br>
             <a class="carousel-control right" href="#myCarousel7" data-slide="next">
               <span class="glyphicon glyphicon-chevron-right"></span>
             </a>
-            </div> <!-- myCarousel -->
-            
+            </div> <!-- myCarousel -->            
         </div> <!-- 6-md -->
         <div class="col-md-6">
         <div class="one_product"> 
@@ -3926,12 +3671,10 @@ DC-инверторный компрессор A-Pam <br>
               <div class="product_card">
                     <img data-image="белый" class="active" src="catalog/low/Family/Family.png" alt="Haier серия FAMILY">               
                 </div>
-                <div class="color-choose"> 
-                         
+                <div class="color-choose">                         
                 </div>
 
              <p class="model_title"></p>
-
 <select name="model" class="userselect">
 <option  data-id="Модель: <br> HSU-30HNH03/R2-W" value="   
 <b>Haier </b> <br>         
@@ -3939,7 +3682,7 @@ DC-инверторный компрессор A-Pam <br>
 <b>Тип:</b> on/off сплит-система <br>    
 <b>Тип монтажа:</b> настенный <br>     
 <b>Режимы: </b>охлаждение/обогрев/осушение <br>
-<b>Рекомендуемая площадь:</b> до 90м²  <br>  
+<b>Рекомендуемая площадь:</b> до 90 м²  <br>  
 <b>Мощность охлаждения:</b> 9000 Вт <br>   
 <b>Мощность обогрева:</b> 9800Вт  <br>   
 <b>Потребляемая мощность:</b> 2700 Вт <br>   
@@ -3949,14 +3692,14 @@ DC-инверторный компрессор A-Pam <br>
 <b>Производитель:</b> Haier серия FAMILY  <br> 
 <b>Модель:</b> HSU-30HNH03/R2-W  <br>    
 <b>Наличие:</b> Есть в наличии <br>
-">90 м²</option>
+">90м²</option>
 <option data-id="Модель: <br> HSU-36HNH03R2" value="
 <b>Haier</b> <br>          
 <b>60 080 руб.</b> <br>      
 <b>Тип:</b> on/off сплит-система <br>    
 <b>Тип монтажа:</b> настенный <br>     
 <b>Режимы:</b> охлаждение/обогрев/осушение <br>
-<b>Рекомендуемая площадь:</b> до 100м² <br>  
+<b>Рекомендуемая площадь:</b> до 100 м² <br>  
 <b>Мощность охлаждения:</b> 1100 Вт <br>   
 <b>Мощность обогрева: </b> 1130Вт <br>    
  <b>  Потребляемая мощность:</b> 3425 Вт    <br>
@@ -3967,7 +3710,7 @@ DC-инверторный компрессор A-Pam <br>
 <b>Модель:</b> HSU-36HNH03R2   <br>  
 <b>Наличие:</b> Есть в наличии <br>   
 
-">100 м²</option> 
+">100м²</option> 
         
 
 </select>
@@ -4018,8 +3761,7 @@ DC-инверторный компрессор A-Pam <br>
             <a class="carousel-control right" href="#myCarousel8" data-slide="next">
               <span class="glyphicon glyphicon-chevron-right"></span>
             </a>
-            </div> <!-- myCarousel -->
-           
+            </div> <!-- myCarousel -->           
         </div> <!-- 6-md -->
         <div class="col-md-6">
         <div class="one_product"> 
@@ -4039,9 +3781,7 @@ DC-инверторный компрессор A-Pam <br>
                 <label data-color="белый" ><span></span></label>             
                          
                 </div>
-
              <p class="model_title"></p>
-
 <select name="model" class="userselect">
 <option  data-id="Модель: <br> HSU-07HNF203/R2" value="   
 <b>Haier  </b><br>      
@@ -4049,7 +3789,7 @@ DC-инверторный компрессор A-Pam <br>
 <b>Тип:</b> on/off сплит-система  <br> 
 <b>Тип монтажа:</b> настенный <br>   
 <b>Режимы:</b> охлаждение/обогрев/осушение<br>
-<b>Рекомендуемая площадь:</b> до 20м²  <br>
+<b>Рекомендуемая площадь:</b> до 20 м²  <br>
 <b>Мощность охлаждения:</b> 2100 Вт <br> 
 <b>Мощность обогрева:</b> 2100Вт <br>  
 <b>Потребляемая мощность:</b> 650 Вт <br>
@@ -4060,14 +3800,14 @@ DC-инверторный компрессор A-Pam <br>
 <b>Модель:</b> HSU-07HNF203/R2 <br>  
 <b>Наличие:</b> Есть в наличии   
  
-">20 м²</option>
+">20м²</option>
 <option data-id="Модель: <br> HSU-09HNF203/R2" value="
 <b>Haier</b>  <br>       
 <b>18 320 руб.</b><br>    
 <b>Тип:</b> on/off сплит-система  <br> 
 <b>Тип монтажа:</b> настенный <br>   
 <b>Режимы:</b> охлаждение/обогрев/осушение<br>
-<b>Рекомендуемая площадь:</b> до 25м² <br> 
+<b>Рекомендуемая площадь:</b> до 25 м² <br> 
 <b>Мощность охлаждения:</b> 2600 Вт <br> 
 <b>  Мощность обогрева: </b>2600Вт <br>  
 <b>Потребляемая мощность:</b> 800 Вт <br>
@@ -4077,16 +3817,14 @@ DC-инверторный компрессор A-Pam <br>
 <b>Производитель:</b> Haier серия Lightera<br> 
 <b>Модель:</b> HSU-09HNF203/R2   <br>
 <b>Наличие:</b> Есть в наличии  
-">25²</option> 
-        
-
+">25м²</option>
 <option data-id="Модель: <br> HSU-12HNF203/R2" value="
 <b>Haier</b>   <br>      
 <b>21 310 руб.</b> <br>    
 <b>Тип:</b> on/off сплит-система <br> 
 <b>Тип монтажа: </b>настенный <br>   
 <b>Режимы:</b> охлаждение/обогрев/осушение<br>
-<b>Рекомендуемая площадь:</b> до 35м²  <br>
+<b>Рекомендуемая площадь:</b> до 35 м²  <br>
 <b>Мощность охлаждения:</b> 3300 Вт <br> 
 <b>Мощность обогрева:</b> 3500Вт <br>  
 <b>Потребляемая мощность:</b> 1025 Вт  <br>
@@ -4095,20 +3833,15 @@ DC-инверторный компрессор A-Pam <br>
 <b>Гарантия:</b> 3 года  <br>      
 <b>Производитель:</b> Haier серия Lightera <br>
 <b>Модель:</b> HSU-12HNF203/R2   <br>
-<b>Наличие:</b> Есть в наличии   
-
-">35²</option> 
-
-
-
-
+<b>Наличие:</b> Есть в наличии
+">35м²</option> 
 <option data-id="Модель: <br>  HSU-18HNF103/R2" value="
 <b>Haier</b> <br>        
 <b>31 390 руб.</b>   <br>  
 <b>Тип:</b> on/off сплит-система   <br>
 <b>Тип монтажа:</b> настенный  <br>  
 <b>Режимы:</b> охлаждение/обогрев/осушение<br>
-<b>Рекомендуемая площадь:</b> до 45м²  <br>
+<b>Рекомендуемая площадь:</b> до 45 м²  <br>
 <b>Мощность охлаждения:</b> 5400 Вт <br> 
 <b>Мощность обогрева:</b> 6000Вт  <br> 
 <b>Потребляемая мощность:</b> 1630 Вт  <br>
@@ -4117,7 +3850,7 @@ DC-инверторный компрессор A-Pam <br>
 <b>Гарантия:</b> 3 года<br>
 <b>Производитель:</b> Haier серия Lightera <br>
 <b>Модель:</b> HSU-18HNF103/R2   <br>
-<b>Наличие:</b> Есть в наличии">45²</option> 
+<b>Наличие:</b> Есть в наличии">45м²</option> 
 
 
 <option data-id="Модель: <br> HSU-24HNF103/R2" value="
@@ -4126,7 +3859,7 @@ DC-инверторный компрессор A-Pam <br>
 <b>Тип:</b> on/off сплит-система <br>  
 <b>Тип монтажа:</b> настенный <br>   
 <b>Режимы: </b>охлаждение/обогрев/осушение<br>
-<b>Рекомендуемая площадь: </b>до 70м² <br> 
+<b>Рекомендуемая площадь: </b>до 70 м² <br> 
 <b>Мощность охлаждения:</b> 7300 Вт <br> 
 <b>Мощность обогрева:</b> 7600Вт <br>  
 <b>Потребляемая мощность:</b> 2205 Вт <br> 
@@ -4136,7 +3869,7 @@ DC-инверторный компрессор A-Pam <br>
 <b>Производитель:</b> Haier серия Lightera <br>
 <b>Модель:</b> HSU-24HNF103/R2   <br>
 <b>Наличие:</b> Есть в наличии   
-">70²</option> 
+">70м²</option> 
 
 </select>
          
@@ -4165,8 +3898,6 @@ DC-инверторный компрессор A-Pam <br>
             <ol class="carousel-indicators">             
               <li data-target="#myCarousel9" data-slide-to="0" class="active"></li>              
               <li data-target="#myCarousel9" data-slide-to="1"></li>              
-              
-              
             </ol> 
             <div class="carousel-inner">
               <div class="active item">
@@ -4175,8 +3906,6 @@ DC-инверторный компрессор A-Pam <br>
               <div class="item"> 
                  <img src="catalog/low/LEADER/2.jpg" alt="Haier серия LEADER">       
               </div>
-              
-             
             </div> <!-- inner carousel -->
             <a class="carousel-control left" href="#myCarousel9" data-slide="prev">
               <span class="glyphicon glyphicon-chevron-left"></span>
@@ -4184,14 +3913,12 @@ DC-инверторный компрессор A-Pam <br>
             <a class="carousel-control right" href="#myCarousel9" data-slide="next">
               <span class="glyphicon glyphicon-chevron-right"></span>
             </a>
-            </div> <!-- myCarousel -->
-             
+            </div> <!-- myCarousel -->             
         </div> <!-- 6-md -->
         <div class="col-md-6">
         <div class="one_product"> 
              <div class="product_item product1">       
-                <p class="productor">Производитель: Haier серия LEADER      
-</p>          
+                <p class="productor">Производитель: Haier серия LEADER</p>         
                 <div class="product_card">
                     <img data-image="белый" class="active" src="catalog/low/Leader/haier_lider.jpg" alt="Haier серия LEADER">
                 </div>
@@ -4209,7 +3936,7 @@ DC-инверторный компрессор A-Pam <br>
 <b>Тип:</b> on/off сплит-система   <br>
 <b>Тип монтажа: </b>настенный   <br> 
 <b>Режимы:</b> охлаждение/обогрев/осушение<br>
-<b>Рекомендуемая площадь:</b> до 20м²  <br>
+<b>Рекомендуемая площадь:</b> до 20 м²  <br>
 <b>Мощность охлаждения:</b> 2050 Вт <br> 
 <b>Мощность обогрева:</b> 2050Вт <br>  
 <b>Потребляемая мощность:</b> 730 Вт <br>
@@ -4220,14 +3947,14 @@ DC-инверторный компрессор A-Pam <br>
 <b>Модель: </b>HSU-07HLT03/R2   <br> 
 <b>Наличие:</b> Есть в наличии   
        
-">20 м²</option>
+">20м²</option>
 
 <option data-id="Модель: <br> HSU-09HLT03/R2" value="<b>Haier </b>        
 <b>11 990 руб.</b>    <br> 
 <b>Тип:</b> on/off сплит-система <br>  
 <b>Тип монтажа:</b> настенный  <br>  
 <b>Режимы:</b> охлаждение/обогрев/осушение<br>
-<b>Рекомендуемая площадь:</b> до 25м²  <br>
+<b>Рекомендуемая площадь:</b> до 25 м²  <br>
 <b>Мощность охлаждения: </b>2400 Вт <br> 
 <b>Мощность обогрева:</b> 2400Вт<br>   
 <b>Потребляемая мощность:</b> 885 Вт <br>
@@ -4238,7 +3965,7 @@ DC-инверторный компрессор A-Pam <br>
 <b>Модель: </b>HSU-09HLT03/R2    <br>
 <b>Наличие:</b> Есть в наличии   
       
-">25 м²</option> 
+">25м²</option> 
         
 <option data-id="Модель: <br> HSU-12HLT03/R2" value="  
 <b>Haier</b><br>         
@@ -4246,7 +3973,7 @@ DC-инверторный компрессор A-Pam <br>
 <b>Тип:</b> on/off сплит-система  <br> 
 <b>Тип монтажа: </b>настенный  <br>  
 <b>Режимы:</b> охлаждение/обогрев/осушение<br>
-<b>Рекомендуемая площадь:</b> до 35м²  <br>
+<b>Рекомендуемая площадь:</b> до 35 м²  <br>
 <b>Мощность охлаждения:</b> 3200 Вт<br>  
 <b>Мощность обогрева:</b> 3250Вт <br>  
 <b>Потребляемая мощность:</b> 920 Вт <br>
@@ -4255,11 +3982,7 @@ DC-инверторный компрессор A-Pam <br>
 <b>Гарантия:</b> 3 года <br>
 <b>Производитель:</b> Haier серия Leader <br>
 <b>Модель:</b> HSU-12HLT03/R2  <br>  
-<b>Наличие:</b> Есть в наличии   
-     
-      
-
-">35 м²</option> 
+<b>Наличие:</b> Есть в наличии">35м²</option> 
                 
 <option data-id="Модель: <br> HSU-18HLT03R2" value=" 
 <b>Haier</b>  <br>       
@@ -4267,7 +3990,7 @@ DC-инверторный компрессор A-Pam <br>
 <b>Тип:</b> on/off сплит-система <br>  
 <b>Тип монтажа:</b> настенный  <br>  
 <b>Режимы:</b> охлаждение/обогрев/осушение<br>
-<b>Рекомендуемая площадь:</b> до 45м² <br> 
+<b>Рекомендуемая площадь:</b> до 45 м² <br> 
 <b>Мощность охлаждения:</b> 5000 Вт<br>  
 <b>Мощность обогрева:</b> 5000Вт<br>   
 <b>Потребляемая мощность: </b>1780 Вт <br> 
@@ -4276,10 +3999,7 @@ DC-инверторный компрессор A-Pam <br>
 <b>Гарантия:</b> 3 года  <br>
 <b>Производитель:</b> Haier серия Leader <br>
 <b>Модель:</b> HSU-18HLT03R2   <br>
-<b>Наличие: </b>Есть в наличии   
-
-      
-">45 м²</option> 
+<b>Наличие: </b>Есть в наличии">45 м²</option> 
 
 <option data-id="Модель: <br> HSU-24HLT03R2    
 " value="  
@@ -4288,7 +4008,7 @@ DC-инверторный компрессор A-Pam <br>
 <b>Тип:</b> on/off сплит-система <br>  
 <b>Тип монтажа:</b> настенный  <br>  
 <b>Режимы: </b>охлаждение/обогрев/осушение<br>
-<b>Рекомендуемая площадь:</b> до 70м² <br> 
+<b>Рекомендуемая площадь:</b> до 70 м² <br> 
 <b>Мощность охлаждения:</b> 6800 Вт<br>  
 <b>Мощность обогрева:</b> 7200Вт <br>  
 <b>Потребляемая мощность:</b> 2195 Вт <br> 
@@ -4297,18 +4017,15 @@ DC-инверторный компрессор A-Pam <br>
 <b>Гарантия:</b> 3 года<br>
 <b>Производитель:</b> Haier серия Leader <br>
 <b>Модель:</b> HSU-24HLT03R2 <br>  
-<b>Наличие:</b> Есть в наличии   
-     
-">70 м²</option> 
-            
-</select>
-           
+<b>Наличие:</b> Есть в наличии
+">70м²</option>             
+</select>           
            <div class="model"></div>
         </div>
        </div>
       </div>
 
-        <button type="button" class="buy_btn modal_button" data-dismiss="modal" aria-label="Close" data-toggle="modal" data-target="#order_modal"><span aria-hidden="true"></span>Купить</button>               
+        <button type="button" class="buy_btn modal_button" data-dismiss="modal" aria-label="Close" data-toggle="modal" data-target="#order_modal"><span aria-hidden="true"></span>Купить</button>              
 
     </div>
   </div>
@@ -4328,14 +4045,11 @@ DC-инверторный компрессор A-Pam <br>
               <li data-target="#myCarousel10" data-slide-to="0" class="active"></li>
               <li data-target="#myCarousel10" data-slide-to="1"></li>              
               <li data-target="#myCarousel10" data-slide-to="2"></li>
-              <li data-target="#myCarousel10" data-slide-to="3"></li>
-              <li data-target="#myCarousel10" data-slide-to="4"></li>
+              <li data-target="#myCarousel10" data-slide-to="3"></li>              
             </ol> 
             <div class="carousel-inner">
-              <div class="active item">
-                 <img src="catalog/low/Lightera/gold1.png" alt="Haier серия Lightera">     
-              </div>
-              <div class="item"> 
+              <div class="active item">               
+             
                  <img src="catalog/medium/ElegantDCInverter/white1.png" alt="ELEGANT DC Inverter">
               </div>
               <div class="item">
@@ -4354,8 +4068,7 @@ DC-инверторный компрессор A-Pam <br>
             <a class="carousel-control right" href="#myCarousel10" data-slide="next">
               <span class="glyphicon glyphicon-chevron-right"></span>
             </a>
-            </div> <!-- myCarousel -->
-             
+            </div> <!-- myCarousel -->             
         </div> <!-- 6-md -->
         <div class="col-md-6">
         <div class="one_product"> 
@@ -4365,12 +4078,9 @@ DC-инверторный компрессор A-Pam <br>
                      <img data-image="белый" class="active" src="catalog/medium/ElegantDCInverter/white.png" alt="Elegant DC Inverter">
                                
                 </div>
-                <div class="color-choose"> 
-                         
+                <div class="color-choose">                         
                 </div>
-
              <p class="model_title"></p>
-
 <select name="model" class="userselect">
 <option  data-id="Модель: <br> AS07NM5HRA" value="   
 <b>Haier</b> <br>        
@@ -4378,7 +4088,7 @@ DC-инверторный компрессор A-Pam <br>
 <b>Тип:</b> DC-инвертор, сплит-система <br>  
 <b>Тип монтажа: </b>настенный  <br>  
 <b>Режимы:</b> охлаждение/обогрев/осушение<br>
-<b>Рекомендуемая площадь:</b> до 20м²<br>  
+<b>Рекомендуемая площадь:</b> до 20 м²<br>  
 <b>Мощность охлаждения:</b> 2200 Вт <br> 
 <b>Мощность обогрева:</b> 2600Вт <br>  
 <b>Потребляемая мощность: </b>657 Вт <br>
@@ -4388,36 +4098,31 @@ DC-инверторный компрессор A-Pam <br>
 <b>Производитель:</b> Haier серия Elegant DC Inverter  
 <b>Модель:</b> AS07NM5HRA <br>   
 <b>Наличие:</b> Есть в наличии   
-
-">20 м²</option>
+">20м²</option>
 <option data-id="Модель: <br> AS09NM5HRA " value="
 <b>Haier</b> <br>        
 <b>22 350 руб. </b><br>    
 <b>Тип:</b> DC-инвертор, сплит-система <br> 
 <b>Тип монтажа:</b> настенный    <br>
 <b>Режимы:</b> охлаждение/обогрев/осушение<br>
-<b>Рекомендуемая площадь:</b> до 25м² <br> 
+<b>Рекомендуемая площадь:</b> до 25 м² <br> 
 <b>Мощность охлаждения:</b> 2700 Вт <br> 
 <b>Мощность обогрева:</b> 3100Вт  <br> 
 <b>Потребляемая мощность:</b> 805 Вт <br>
 <b>Уровень шума (max/min):</b> 34/20 дБ  <br>
 <b>Тип хладагента:</b> R410А <br>  
-<b>Гарантия:</b> 3 года   <br>   
-        
+<b>Гарантия:</b> 3 года   <br>
 <b>Производитель:</b> Haier серия Elegant DC Inverter <br> 
 <b>Модель:</b> AS09NM5HRA    <br>
-<b>Наличие:</b> Есть в наличии   
-  
-">25²</option> 
-        
-
+<b>Наличие:</b> Есть в наличии 
+">25м²</option> 
 <option data-id="Модель: <br> AS12NM5HRA" value="
 <b>Haier  </b> <br>      
 <b>25 110 руб.</b> <br>    
 <b>Тип:</b> DC-инвертор, сплит-система  <br> 
 <b>Тип монтажа:</b> настенный  <br>  
 <b>Режимы:</b> охлаждение/обогрев/осушение<br>
-<b>Рекомендуемая площадь:</b> до 35м² <br> 
+<b>Рекомендуемая площадь:</b> до 35 м² <br> 
 <b>Мощность охлаждения:</b> 3500 Вт <br> 
 <b>Мощность обогрева:</b> 3900Вт<br>  
 <b>Потребляемая мощность:</b> 1080 Вт  <br>
@@ -4426,19 +4131,15 @@ DC-инверторный компрессор A-Pam <br>
 <b>Гарантия:</b> 3 года<br>  
 <b>Производитель:</b> Haier серия Elegant DC Inverter  <br>
 <b>Модель:</b> AS12NM5HRA    <br>
-<b>Наличие:</b> Есть в наличии   
-
-">35²</option> 
-
-
-
+<b>Наличие:</b> Есть в наличии 
+">35м²</option> 
 <option data-id="Модель: <br> AS18NM5HRA" value="
 <b>Haier</b> <br>       
 <b>36 520 руб.</b> <br>    
 <b>Тип:</b> DC-инвертор, сплит-система<br>  
 <b>Тип монтажа:</b> настенный  <br>  
 <b>Режимы:</b> охлаждение/обогрев/осушение<br>
-<b>Рекомендуемая площадь:</b> до 45м² <br> 
+<b>Рекомендуемая площадь:</b> до 45 м² <br> 
 <b>Мощность охлаждения:</b> 5200 Вт <br> 
 <b>Мощность обогрева:</b> 6000Вт  <br> 
 <b>Потребляемая мощность:</b> 1485 Вт  <br>
@@ -4447,9 +4148,7 @@ DC-инверторный компрессор A-Pam <br>
 <b>Гарантия:</b> 3 года <br>
 <b>Производитель:</b> Haier серия Elegant DC Inverter<br>  
 <b>Модель:</b> AS18NM5HRA  <br>  
-<b>Наличие:</b> Есть в наличии   
-
-">45²</option> 
+<b>Наличие:</b> Есть в наличии">45м²</option> 
 
 
 <option data-id="Модель: <br> AS24NM5HRA" value="
@@ -4458,7 +4157,7 @@ DC-инверторный компрессор A-Pam <br>
 <b>Тип:</b> DC-инвертор, сплит-система <br>  
 <b>Тип монтажа:</b> настенный <br>   
 <b>Режимы: </b>охлаждение/обогрев/осушение<br>
-<b>Рекомендуемая площадь:</b> до 70м² <br> 
+<b>Рекомендуемая площадь:</b> до 70 м² <br> 
 <b>Мощность охлаждения: </b>7100 Вт <br> 
 <b>Мощность обогрева:</b> 7600Вт <br>  
 <b>Потребляемая мощность:</b> 2190 Вт <br> 
@@ -4469,15 +4168,14 @@ DC-инверторный компрессор A-Pam <br>
 <b>Модель:</b> AS24NM5HRA    <br>
 <b>Наличие:</b> Есть в наличии   
 
-">70²</option> 
+">70м²</option> 
 </select>
          
 <div class="model"></div>  
         </div>
        </div>
       </div>       
-  <button type="button" class="buy_btn modal_button" data-dismiss="modal" aria-label="Close" data-toggle="modal" data-target="#order_modal"><span aria-hidden="true"></span>Купить</button>                      
-       
+  <button type="button" class="buy_btn modal_button" data-dismiss="modal" aria-label="Close" data-toggle="modal" data-target="#order_modal"><span aria-hidden="true"></span>Купить</button> 
     </div>
   </div>
  </div>
@@ -4494,8 +4192,7 @@ DC-инверторный компрессор A-Pam <br>
             <div id="myCarousel11" class="carousel slide" data-interval="3000" data-ride="carousel">
             <ol class="carousel-indicators">             
               <li data-target="#myCarousel11" data-slide-to="0" class="active"></li>
-              <li data-target="#myCarousel11" data-slide-to="1"></li>              
-              
+              <li data-target="#myCarousel11" data-slide-to="1"></li>
             </ol> 
             <div class="carousel-inner">
               <div class="active item">
@@ -4513,18 +4210,15 @@ DC-инверторный компрессор A-Pam <br>
               <span class="glyphicon glyphicon-chevron-right"></span>
             </a>
             </div> <!-- myCarousel -->
-          
         </div> <!-- 6-md -->
         <div class="col-md-6">
         <div class="one_product"> 
              <div class="product_item product1">       
                 <p class="productor">Производитель: Haier <br>серия Tibio DC Inverter</p>          
               <div class="product_card">
-                    <img data-image="белый" class="active" src="catalog/medium/TibioDCInverter/white.png" alt="Haier серия Tibio DC Inverter ">
-                               
+                    <img data-image="белый" class="active" src="catalog/medium/TibioDCInverter/white.png" alt="Haier серия Tibio DC Inverter ">                               
                 </div>
-                <div class="color-choose"> 
-                         
+                <div class="color-choose">                 
                 </div>
 
              <p class="model_title"></p>
@@ -4536,7 +4230,7 @@ DC-инверторный компрессор A-Pam <br>
 <b>Тип:</b> DC-инвертор, сплит-система  <br>
 <b>Тип</b> монтажа: настенный   <br> 
 <b>Режимы:</b> охлаждение/обогрев/осушение<br>
-<b>Рекомендуемая площадь:</b> до 20м²  <br>
+<b>Рекомендуемая площадь:</b> до 20 м²  <br>
 <b>Мощность охлаждения:</b> 2050 Вт <br> 
 <b>Мощность обогрева:</b> 2200Вт <br>  
 <b>Потребляемая мощность:</b> 635 Вт <br>
@@ -4545,16 +4239,14 @@ DC-инверторный компрессор A-Pam <br>
 <b>Гарантия:</b> 3 года <br>
 <b>Производитель:</b> Haier серия Tibio DC Inverter  <br>
 <b>Модель:</b> AS07TH3HRA    <br>
-<b>Наличие:</b> Есть в наличии   
-
-">20 м²</option>
+<b>Наличие:</b> Есть в наличии">20м²</option>
 <option data-id="Модель: <br>  AS09TH3HRA" value="
 <b>Haier</b>  <br>       
 <b>20 330 руб.</b> <br>    
 <b>Тип:</b> DC-инвертор, сплит-система  <br> 
 <b>Тип монтажа:</b> настенный   <br> 
 <b>Режимы:</b> охлаждение/обогрев/осушение<br>
-<b>Рекомендуемая площадь:</b> до 25м²<br>  
+<b>Рекомендуемая площадь:</b> до 25 м²<br>  
 <b>Мощность охлаждения:</b> 2500 Вт <br> 
 <b>Мощность обогрева:</b> 2800Вт <br>  
 <b>Потребляемая мощность: </b>778 Вт <br>
@@ -4563,18 +4255,14 @@ DC-инверторный компрессор A-Pam <br>
 <b>Гарантия:</b> 3 года   <br>
 <b>Производитель:</b> Haier серия Tibio DC Inverter  <br>
 <b>Модель:</b> AS09TH3HRA    <br>
-<b>Наличие:</b> Есть в наличии   
-
-">25²</option> 
-        
-
+<b>Наличие:</b> Есть в наличии">25м²</option> 
 <option data-id="Модель: <br>  AS12TB3HRA" value="
 <b>Haier </b><br>        
 <b>23 160 руб.</b> <br>    
 <b>Тип:</b> DC-инвертор, сплит-система<br>   
 <b>Тип монтажа:</b> настенный  <br>  
 <b>Режимы:</b> охлаждение/обогрев/осушение<br>
-<b>Рекомендуемая площадь:</b> до 35м² <br> 
+<b>Рекомендуемая площадь:</b> до 35 м² <br> 
 <b>Мощность охлаждения:</b> 3500 Вт  <br>
 <b>Мощность обогрева:</b> 3700 Вт  <br>  
 <b>Потребляемая мощность:</b> 1090 Вт <br> 
@@ -4583,19 +4271,14 @@ DC-инверторный компрессор A-Pam <br>
 <b>Гарантия:</b> 3 года <br> 
 <b>Производитель:</b> Haier серия Tibio DC Inverter  
 <b>Модель:</b> AS12TB3HRA <br>   
-<b>Наличие:</b> Есть в наличии<br>   
-
-">35²</option> 
-
-
-
+<b>Наличие:</b> Есть в наличии<br>">35м²</option> 
 <option data-id="Модель: <br> AS18TD2HRA" value="
 <b>Haier</b><br>        
 <b>33 240 руб.</b> <br>    
 <b>Тип:</b> DC-инвертор, сплит-система   <br>
 <b>Тип монтажа:</b> настенный <br>   
 <b>Режимы:</b> охлаждение/обогрев/осушение<br>
-<b>Рекомендуемая площадь:</b> до 45м²  <br>
+<b>Рекомендуемая площадь:</b> до 45 м²  <br>
 <b>Мощность охлаждения:</b> 5000 Вт<br>  
 <b>Мощность обогрева:</b> 6000 Вт  <br>  
 <b>Потребляемая мощность:</b> 1540 Вт  <br>
@@ -4604,18 +4287,14 @@ DC-инверторный компрессор A-Pam <br>
 <b>Гарантия:</b> 3 года<br>
 <b>Производитель:</b> Haier серия Tibio DC Inverter  <br>
 <b>Модель:</b> AS18TD2HRA    <br>
-<b>Наличие:</b> Есть в наличии   
-
-">45²</option> 
-
-
+<b>Наличие:</b> Есть в наличии">45м²</option> 
 <option data-id="Модель: <br> AS24TD2HRA" value="
 <b>Haier</b>  <br>       
- <b> 42 680 руб.</b><br>     
+<b> 42 680 руб.</b><br>     
 <b>Тип:</b> DC-инвертор, сплит-система   <br>
 <b>Тип монтажа:</b> настенный   <br> 
 <b>Режимы:</b> охлаждение/обогрев/осушение<br>
-<b>Рекомендуемая площадь:</b> до 70м²  <br>
+<b>Рекомендуемая площадь:</b> до 70 м²  <br>
 <b>Мощность охлаждения:</b> 6600 Вт <br> 
 <b>Мощность обогрева:</b> 7400 Вт <br>   
 <b>Потребляемая мощность:</b> 2019 Вт  <br>
@@ -4624,16 +4303,12 @@ DC-инверторный компрессор A-Pam <br>
 <b>Гарантия:</b> 3 года <br>
 <b>Производитель:</b> Haier серия Tibio DC Inverter <br> 
 <b>Модель:</b> AS24TD2HRA  <br>  
-<b>Наличие:</b> Есть в наличии   
-
-">70²</option> 
+<b>Наличие:</b> Есть в наличии">70м²</option> 
 </select>
-         
 <div class="model"></div>
  </div>
        </div>
       </div>
-
        <button type="button" class="buy_btn modal_button" data-dismiss="modal" aria-label="Close" data-toggle="modal" data-target="#order_modal"><span aria-hidden="true"></span>Купить</button>              
        
     </div>
@@ -4678,8 +4353,7 @@ DC-инверторный компрессор A-Pam <br>
             <a class="carousel-control right" href="#myCarousel12" data-slide="next">
               <span class="glyphicon glyphicon-chevron-right"></span>
             </a>
-            </div> <!-- myCarousel -->
-           
+            </div> <!-- myCarousel -->           
         </div> <!-- 6-md -->
         <div class="col-md-6">
         <div class="one_product"> 
@@ -4699,7 +4373,7 @@ DC-инверторный компрессор A-Pam <br>
 <b>Тип:</b> DC инвертор, сплит-система <br>      
 <b>Тип монтажа:</b> настенный  <br>      
 <b>Режимы:</b> охлаждение/обогрев/осушение <br>    
-<b>Рекомендуемая площадь:</b> до 25м² <br>   
+<b>Рекомендуемая площадь:</b> до 25 м² <br>   
 <b>Мощность охлаждения:</b> 2600 Вт<br>    
 <b>Мощность обогрева: </b>3200Вт<br>
 <b>Потребляемая мощность:</b> 650 Вт <br>
@@ -4709,14 +4383,14 @@ DC-инверторный компрессор A-Pam <br>
 <b>Производитель:</b> Haier серия Lightera Crystal DC Inverter <br>  
 <b>Модель:</b> AS09CB2HRA <br>     
 <b>Наличие:</b> Есть в наличии 
-">25 м²</option>
+">25м²</option>
 <option data-id="Модель: <br>  AS12CB2HRA" value="
 <b>Haier</b>  <br>       
 <b>48 960 руб.</b> <br>      
 <b>Тип:</b> DC инвертор, сплит-система <br>      
 <b>Тип монтажа:</b> настенный  <br>      
 <b>Режимы:</b> охлаждение/обогрев/осушение  <br>   
-<b>Рекомендуемая площадь:</b> до 35м²  <br>  
+<b>Рекомендуемая площадь:</b> до 35 м²  <br>  
 <b>Мощность охлаждения:</b> 3600 Вт <br>   
 <b>Мощность обогрева:</b> 4200Вт<br>
 <b>Потребляемая мощность:</b> 950 Вт <br>
@@ -4726,7 +4400,7 @@ DC-инверторный компрессор A-Pam <br>
 <b>Производитель:</b> Haier серия Lightera Crystal DC Inverter<br>   
 <b>Модель:</b> AS12CB2HRA  <br>    
 <b> <b></b>Наличие:</b> Есть в наличии
-">35²</option> 
+">35м²</option> 
 </select>         
          <div class="model"></div>
         </div>
@@ -4799,7 +4473,7 @@ DC-инверторный компрессор A-Pam <br>
 <b>Тип:</b> Super DC инвертор, сплит-система   <br>    
 <b>Тип монтажа:</b> настенный  <br>      
 <b>Режимы:</b> охлаждение/обогрев/осушение  <br>     
-<b>Рекомендуемая площадь:</b> до 25м² <br>       
+<b>Рекомендуемая площадь:</b> до 25 м² <br>       
 <b>Мощность охлаждения:</b> 2600 Вт<br>      
 <b>Мощность обогрева:</b> 3200 Вт<br>   
 <b>Потребляемая мощность:</b> 650 Вт   <br>
@@ -4809,14 +4483,14 @@ DC-инверторный компрессор A-Pam <br>
 <b>Производитель:</b> Haier серия Lightera Premium DC Inverter <br>
 <b>Модель:</b> AS25S2SD1FA <br>
 <b>Наличие:</b> Есть в наличии
-">25 м²</option>
+">25м²</option>
 <option data-id="Модель: <br> AS35S2SD1FA" value="
 <b>Haier</b> <br>    
 <b>59 440 руб. </b> <br>     
 <b>Тип:</b> Super DC инвертор, сплит-система   <br>    
 <b>Тип монтажа:</b> настенный  <br>      
 <b>Режимы:</b> охлаждение/обогрев/осушение   <br>    
-<b>Рекомендуемая площадь:</b> до 35м²   <br>     
+<b>Рекомендуемая площадь:</b> до 35 м²   <br>     
 <b>Мощность охлаждения:</b> 3500 Вт <br>     
 <b>Мощность обогрева:</b> 4200 Вт <br>   
 <b>Потребляемая мощность:</b> 875 Вт  <br> 
@@ -4825,9 +4499,7 @@ DC-инверторный компрессор A-Pam <br>
 <b>Гарантия:</b> 3 года<br>
 <b>Производитель:</b> Haier серия Lightera Premium DC Inverter <br>
 <b>Модель:</b> AS35S2SD1FA <br>
-<b>Наличие:</b> Есть в наличии   
-
-">35²</option> 
+<b>Наличие:</b> Есть в наличии">35м²</option> 
 </select>
          
 <div class="model"></div>
@@ -4855,8 +4527,7 @@ DC-инверторный компрессор A-Pam <br>
               <li data-target="#myCarousel13" data-slide-to="0" class="active"></li>
               <li data-target="#myCarousel13" data-slide-to="1"></li>              
               <li data-target="#myCarousel13" data-slide-to="2"></li>
-              <li data-target="#myCarousel13" data-slide-to="3"></li>
-             
+              <li data-target="#myCarousel13" data-slide-to="3"></li>             
             </ol> 
             <div class="carousel-inner">
               <div class="active item">
@@ -4870,8 +4541,7 @@ DC-инверторный компрессор A-Pam <br>
               </div>
              <div class="item">
                 <img src="catalog/premium/LighteraDCInverter/pult.jpg" alt="Haier серия Lightera DC Inverter">  
-              </div>
-              
+              </div>              
             </div> <!-- inner carousel -->
             <a class="carousel-control left" href="#myCarousel13" data-slide="prev">
               <span class="glyphicon glyphicon-chevron-left"></span>
@@ -4879,8 +4549,7 @@ DC-инверторный компрессор A-Pam <br>
             <a class="carousel-control right" href="#myCarousel13" data-slide="next">
               <span class="glyphicon glyphicon-chevron-right"></span>
             </a>
-            </div> <!-- myCarousel -->
-            
+            </div> <!-- myCarousel -->            
         </div> <!-- 6-md -->
         <div class="col-md-6">
         <div class="one_product"> 
@@ -4893,15 +4562,12 @@ DC-инверторный компрессор A-Pam <br>
                 </div>                
                 <div class="color-choose">
                <input  data-image="белый" type="radio" class="white" name="color" value="белый">
-                <label data-color="белый" ><span></span></label> 
-
+                <label data-color="белый" ><span></span></label>
                 <input  data-image="черный" type="radio" class="black" name="color" value="черный">
                 <label data-color="черный" ><span></span></label>  
                 <input  data-image="золотой" type="radio" class="gold" name="color" value="серый">
-                <label data-color="золотой"><span></span></label>              
-                           
+                <label data-color="золотой"><span></span></label> 
                 </div>
-
               <p class="model_title"></p>
 
 <select name="model" class="userselect">
@@ -4911,26 +4577,25 @@ DC-инверторный компрессор A-Pam <br>
 <b>Тип:</b> DC инвертор, сплит-система   <br>    
 <b>Тип монтажа:</b> настенный    <br>    
 <b>Режимы:</b> охлаждение/обогрев/осушение  <br>   
-<b>Рекомендуемая площадь: </b>до 25м²   <br> 
+<b>Рекомендуемая площадь: </b>до 25 м²   <br> 
 <b>Мощность охлаждения:</b> 2700 Вт <br>   
 <b>Мощность обогрева:</b> 2800Вт<br>
 <b>Потребляемая мощность:</b> 710 Вт <br>
 <b>Уровень шума (max/min):</b> 38/20 дБ  <br>
 <b>Тип хладагента: </b>R410А <br>  
-<b>Гарантия:</b> 3 года<br>
-  
+<b>Гарантия:</b> 3 года<br> 
 <b>Производитель:</b> Haier серия Lightera DC Inverter  <br> 
 <b>Модель:</b> AS09NS4ERA-W/G/B   <br>   
 <b>Наличие:</b> Есть в наличии       
 
-">25 м²</option>
+">25м²</option>
 <option data-id="Модель: <br> AS12NS4ERA" value="
 <b>Haier </b>     <br>   
 <b>33 580 руб.</b> <br>     
 <b>Тип:</b> DC инвертор, сплит-система   <br>    
 <b>Тип монтажа:</b> настенный <br>       
 <b>Режимы:</b> охлаждение/обогрев/осушение  <br>   
-<b>Рекомендуемая площадь:</b> до 35м²  <br>  
+<b>Рекомендуемая площадь:</b> до 35 м²  <br>  
 <b>Мощность охлаждения: </b>3700 Вт <br>   
 <b>Мощность обогрева:</b> 3600Вт<br>
 <b>Потребляемая мощность:</b> 1000 Вт <br> 
@@ -4939,17 +4604,15 @@ DC-инверторный компрессор A-Pam <br>
 <b>Гарантия:</b> 3 года <br>
 <b>Производитель:</b> Haier серия Lightera DC Inverter<br>   
 <b>Модель:</b> AS12NS4ERA-W/G/B   <br>   
-<b>Наличие:</b> Есть в наличии       
-
-">35²</option> 
-
+<b>Наличие:</b> Есть в наличии
+">35м²</option>
 <option data-id="Модель: <br> AS12NS4ERA" value="
 <b>Haier</b> <br>        
 <b>33 580 руб.</b>  <br>     
 <b>Тип:</b> DC инвертор, сплит-система <br>      
 <b>Тип монтажа:</b> настенный  <br>      
 <b>Режимы: </b>охлаждение/обогрев/осушение <br>    
-<b>Рекомендуемая площадь:</b> до 35м² <br>   
+<b>Рекомендуемая площадь:</b> до 35 м² <br>   
 <b>Мощность охлаждения:</b> 3700 Вт <br>   
 <b>Мощность обогрева:</b> 3600Вт<br>
 <b>Потребляемая мощность:</b> 1000 Вт <br> 
@@ -4958,18 +4621,15 @@ DC-инверторный компрессор A-Pam <br>
 <b>Гарантия: <b>3 года <br>
 <b></b><b>Производитель:</b> Haier серия Lightera DC Inverter <br>  
 <b>Модель:</b> AS12NS4ERA-W/G/B   <br>   
-<b>Наличие:</b> Есть в наличии       
-
-">35²</option> 
-
-
+<b>Наличие:</b> Есть в наличии
+">35м²</option>
 <option data-id="Модель: <br> AS18NS4ERA" value="
 <b>Haier </b> <br>       
 <b>50 000 руб.</b> <br>      
 <b>Тип:</b> DC инвертор, сплит-система  <br>     
 <b>Тип монтажа:</b> настенный   <br>     
 <b>Режимы:</b> охлаждение/обогрев/осушение <br>    
-<b>Рекомендуемая площадь:</b> до 45м² <br>   
+<b>Рекомендуемая площадь:</b> до 45 м² <br>   
 <b>Мощность охлаждения:</b> 5200 Вт <br>   
 <b>Мощность обогрева:</b> 5800Вт<br>
 <b>Потребляемая мощность:</b> 1000 Вт <br> 
@@ -4978,17 +4638,15 @@ DC-инверторный компрессор A-Pam <br>
 <b>Гарантия:</b> 3 года <br>
 <b>Производитель:</b> Haier серия Lightera DC Inverter <br>  
 <b>Модель:</b> AS18NS4ERA-W/G/B <br>     
-<b>Наличие:</b> Есть в наличии       
-
-">45²</option> 
-
+<b>Наличие:</b> Есть в наличии
+">45м²</option> 
 <option data-id="Модель: <br> AS24NS4ERA" value="
 <b>Haier </b> <br>       
 <b>61 800 руб.</b> <br>      
 <b>Тип:</b> DC инвертор, сплит-система <br>      
 <b>Тип монтажа:</b> настенный <br>       
 <b>Режимы:</b> охлаждение/обогрев/осушение <br>    
-<b>Рекомендуемая площадь:</b> до 70м² <br>   
+<b>Рекомендуемая площадь:</b> до 70 м² <br>   
 <b>Мощность охлаждения:</b> 7000 Вт <br>   
 <b>Мощность обогрева:</b> 7500Вт<br>
 <b>Потребляемая мощность:</b> 2180 Вт <br> 
@@ -4997,13 +4655,9 @@ DC-инверторный компрессор A-Pam <br>
 <b>Гарантия: </b>3 года <br>
 <b>Производитель:</b> Haier серия Lightera DC Inverter<br>   
 <b>Модель:</b> AS24NS4ERA-W/G/B <br>     
-<b>Наличие:</b> Есть в наличии       
-
-">70²</option> 
-
-
-</select>
-         
+<b>Наличие:</b> Есть в наличии
+">70м²</option>
+</select>         
          <div class="model"></div>        
         </div>
        </div>
@@ -5013,11 +4667,7 @@ DC-инверторный компрессор A-Pam <br>
   </div>
  </div>
 </div>
-
-
-
-
-	<div id="to_top"></div>
+<div id="to_top"></div>
 
   <!--[if lt IE 9]>
 
@@ -5032,7 +4682,7 @@ DC-инверторный компрессор A-Pam <br>
   <![endif]-->
   <script src="libs/jquery/jquery-2.1.3.min.js"></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.9.8/TweenMax.min.js'></script>
-<script  src="js/preloader.js"></script>
+  <script  src="js/preloader.js"></script>
   <script src="libs/fancybox/jquery.fancybox.min.js" defer></script>
   <script src="js/wow.js"></script>
      <script>
@@ -5056,8 +4706,7 @@ DC-инверторный компрессор A-Pam <br>
     <!-- JS Scripts -->
     <script src="js/plugins_all.js" defer> </script>
     <script src="js/jquery.easing.js" defer> </script>
-    <script src="js/scroll.js" defer></script>   
-
+    <script src="js/scroll.js" defer></script>
   <script src="libs/jqueryui/jquery-ui.min.js" defer></script>
   <script src="libs/bootstrap/bootstrap.js" defer></script>
   <script src="ibs/bootstrap/bootstrap-hover-dropdown.min.js" defer></script>
@@ -5067,24 +4716,10 @@ DC-инверторный компрессор A-Pam <br>
   <script src="libs/animate/dropdown.js" defer></script>
   <script src="libs/countdown/jquery.countdown.js" defer></script>
   <script src="libs/waypoints/waypoints.min.js" defer></script>
-  
   <script src="libs/maskedinput/jquery.maskedinput.min.js" defer></script>
   <script src="libs/selectstyle/jquery.formstyler.min.js" defer></script>
-
   <script src="js/common.js" defer></script>
-
-  
   <script src="js/colorselect.js" defer></script>
-  
-
-
-
-
-
-
-
-
-	
 </body>
 </html>
 
